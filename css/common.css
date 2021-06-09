@@ -1,0 +1,114 @@
+html{
+    scroll-behavior: smooth;
+}
+#search{
+    width:30px;
+    opacity:70%;
+    cursor: pointer;
+}
+#search:hover{
+    opacity: 100%;
+}
+.navbar .navbar-nav .nav-link:hover {
+    color: #000000;
+}
+
+.navbar .navbar-nav .nav-link {
+    position: relative;
+}
+.navbar .navbar-nav .nav-link::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: grey;
+    color: transparent;
+    width: 0;
+    content: '';
+    height: 3px;
+    transition: all 0.5s;
+}
+.navbar .navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+#searchbar{
+    position:fixed;
+    height:100%;
+    background-color: rgba(0,0,0,0.1);/*Set background color*/
+    backdrop-filter: blur(10px);
+    top:80px;
+    display:flex;
+    left:0;
+    justify-content: center;
+    z-index:200;
+    object-fit: cover;
+    visibility: hidden;
+
+}
+@keyframes cover { from { opacity: 0;}}
+@keyframes fly { from { opacity: 0;top:90%} }
+.searchbaranimation{
+    animation:cover 1s , 5s alternate;
+}
+.searchbox{
+    height:60px;
+    width:500px;
+    position:relative;
+    top:20%;
+    font-size: 40px;
+    border:1px solid grey;
+    border-radius: 30px;
+    outline: none;
+    padding-left: 20px;
+}
+.margintop{
+    padding-top:200px;
+    padding-bottom:200px ;
+}
+.grey{
+    background-color: rgba(192,192,192,0.3);
+}
+.mainname{
+    position:absolute;
+    left:50%;
+    text-align: center;
+    top:50%;
+    transform: translate(-50%, -50%);
+    animation: fly 2s , 3s alternate ;/*Add animation */
+
+}
+#enlarge{
+    font-size:48px;
+}
+
+.textfly{
+    animation: cover 2s , 3s alternate ;/*Add animation */
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    40% {opacity: 1;}
+    60% {opacity: 0;}
+    100% {opacity: 0;}
+}
+.cursor{
+    animation: blink .6s linear infinite alternate;
+}
+@keyframes typing { from { width: 0;} }
+#type{
+
+
+}
+.greyscale{
+
+    animation:greys 3s ,3s alternate;
+}
+@keyframes greys {
+    from {
+        filter:grayscale(100%);
+    }
+    to {
+        filter:grayscale(0%);
+    }
+}
+

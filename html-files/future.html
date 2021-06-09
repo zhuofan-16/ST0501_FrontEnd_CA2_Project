@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZhuoFan's Future Prospect</title>
+    <meta name="keywords" content="ZhuoFan,sp,daaa,卓凡,ChenZhuofan,Chen,ZHUOFAN,CHEN">
+    <link rel="icon" href="../profilepic/profile.jpg"/>
+    <meta name="description"  content="Personal Website | ZhuoFan | I am 17 years old this year.Currently a student studying in Singapore Polytechnic.I love to play badminton and to do coding<br>Click to know more about me:)">
+    <meta name="name" content="ZhuoFan">
+    <meta name="image" content="profile.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/future.css" rel="stylesheet">
+    <script src="../js/future.js"></script>
+</head>
+<body>
+<header>
+    <nav id='nav' class="navbar py-4 navbar-expand-md navbar-light fixed-top bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ZhuoFan | Future Prospect&nbsp;&nbsp;&nbsp;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class=" navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link"  href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="secondary.html" >Secondary School</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sp.html" >SP Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active"  aria-current="page" href="future.html" >Future Prospect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html" >Feedback</a>
+                    </li>
+                </ul>
+                </ul>
+                </ul>
+                </ul>
+                <form class="d-flex">
+                    <img src="../searchbaricons/search.png" id="search" alt="search"/>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid searchbaranimation" id="searchbar">
+    <input type="text" class="searchbox" placeholder="Search..">
+</div>
+
+<div class="container-fluid margintop grey " >
+    <div class="container">
+            <div class="row text-center textfly">
+
+                <div class="col-12 text-center ">
+                    <div class="container rocket" id="rocket">
+                        <div id="innerrocket">
+                            <img src="../secondaryschoolphoto/favpng_rocket-spacecraft-black-and-white-clip-art.png" class="" style="width:50px;" >
+                            <div class="" id="line"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <br><br>
+                    <h1>Future Career</h1>
+                    <p>View my current course and my future prospect.</p>
+                    <img  onclick="window.location.href='future.html#daaareflection';" src="../svg/arrow-down-square.svg" alt="arrow" style="height:50px;cursor:pointer;">
+
+                </div>
+            </div>
+        </div>
+</div>
+<div class="container margintop" id="daaareflection">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <h1>Diploma in<br><span id="type" style="color:royalblue"></span><span style="color:royalblue" class="cursor">|</span></h1>
+            <script>
+                var r = 0;
+                var txt = "Applied AI and Analytics";
+                var speed = 300;
+
+                function typeWriter() {
+                    var endtype= setInterval(function(){
+
+                        if (r < txt.length) {
+                            document.getElementById("type").innerHTML += txt.charAt(r);
+                            r++;
+                        }
+                    },300);
+                    endtype();
+                    clearTimeout(endtype);
+                }
+
+                document.addEventListener('scroll',function(e){
+                    if (window.pageYOffset+window.innerHeight >document.querySelector("#daaareflection>div").offsetTop){
+
+                        typeWriter();
+                    }
+                    else{
+                        removetype();
+                    }
+
+
+                })
+            </script>
+
+            <figure>
+
+                <blockquote class="blockquote" style="font-size:14px;">
+                    <br>
+                    <p>"Being a DAAA student gives you the competitive edge of entering into these fast growing areas and path the way for your future studies and career. You can look forward to an interesting curriculum that covers a wide variety of data science topics including: open source tools and libraries, methodologies, Python, databases, data visualization, data analysis, and machine learning."</p>
+                </blockquote>
+                <figcaption class="blockquote-footer" style="font-size:12px;">
+                    Extracted from <cite title="Source Title">Singapore Polytechnic Website</cite>
+                </figcaption>
+            </figure>
+
+            <p>  As a student in the 21st century,we can actually see that AI is the future.
+                In fact,it is already in our daily life like in Google assistants,XiaoAI speech assistant,face recognition of device and etc.
+                I have a interest in software programming since young .
+                Upon the seeing the raise of AI,
+                I always thought how can I integrate AI into application and make them visible in our daily life to make people's life more convenience.
+                Hence,that is the main reason I chose DAAA as my course.
+            </p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-end " >
+            <img src="../spphoto/thumbnail-daaa.jpg" id="daaaphoto">
+
+        </div>
+    </div>
+</div>
+<script>
+    function rand(m,n){
+        return Math.ceil(Math.random()*(n-m+1))+m-1;
+    }
+    var num=40;
+    for (var u=0;u<num;u++){
+        var j =document.createElement("j");
+        j.style.height=rand(30,100)+'px';
+        j.style.top=-250+'px';
+        j.style.left=rand(-250,250)+"px";
+        j.style.animationDuration=rand(5,30)/10 +'s';
+        document.querySelector('.rocket').appendChild(j);
+    }
+</script>
+<div class="container-fluid margintop grey">
+    <div class="container">
+        <div class="row">
+            <div class="catt col-lg-3 col-md-6 col-sm-6" >
+                <div class="card" id='card1' style="width: 20rem; height: 25rem;">
+                    <div id="card1font">
+                        <img src="../spphoto/sp.jpg" style="height:240px;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">First Impression</h3>
+                        </div>
+                    </div>
+                    <div id="card1backside">
+                        <div class="container row aligncard">
+                            <div class="text-center">
+                                <img src="../cardicons/landscape.svg" style="height:50px;">
+                                <p><strong>When I first walked into SP on 14 April 2021 for the <span style="color:royalblue">freshman orientation program</span>, I was actually  <span style="color:mediumseagreen">kind of excited </span> to meet new people and see new things.</strong></p>
+                            </div>
+                            <div class="col text-center">
+                                <button type="button" class="btn btn-primary">Look at the experience</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="catt col-lg-3 col-md-6 col-sm-6" >
+                <div class="card" id='card2' style="width: 20rem; height: 25rem;">
+                    <div id="card2font">
+                        <img src="../spphoto/daaa.jpg" style="height:240px;" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">My Classmates</h3>
+                        </div>
+                    </div>
+                    <div id="card2backside">
+                        <div class="container row aligncard">
+                            <div class="text-center">
+                                <img src="../cardicons/collaboration.svg" style="height:50px;">
+                                <p><strong>My classmates all come from <span style="color:orange">different backgrounds</span>.For some of them,we have <span style="color:red">already</span> knew each other previously.Know more about how my classmates are.</strong></p>
+
+                            </div>
+                            <div class="col text-center">
+                                <button type="button" class="btn btn-success">Learn More</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 text-end">
+                <h1><span style="color:forestgreen">Experience </span>In Course</h1>
+                <p>School have started for around 5 months.In this 5 months,I have learned more about proposal writing ,critical thinking , fundamental of computing,Javascript,HTML,CSS,BootStrip5(Front End Web Development) and etc.I have also understood how to use them to help me.I have also learn some Mathematics that is somehow related to my course.In this 5 month ,I have realise that the saying that "Poly is easy"is a scam.In SP,there is a lot of self directed learning and self responsibility.We need do a lot of search up to make ourself to be able to understand further apart from the content taught in lessons.But overall,I think the course is manageable if you are willing to spend effort and time. View more about the experience in SP here.</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<div class="container margintop">
+    <div class="row" id="jobsection">
+        <div class="col-sm-12 col-md-6">
+            <h1>Future <span style="color:orangered">Jobs</span> And <span style="color:mediumpurple" >Opportunities</span></h1>
+        <p>Well, being in an AI course allows you to be in a lot of sectors in the future as a lot of industries are transforming to become more digitized and AI & data analytics are the key underpinning technologies for transforming these industries like medical, manufacturing, etc. However, I feel that I think I am still aiming to be in the software area as this is my dream from young. I think that this course together with further studies will allow me to be able to integrate AI technology into software and make software smarter to provide convenience to people.
+
+        </p>
+        </div>
+        <div class="col-sm-12 col-md-6 text-end">
+            <!----<a href="https://iconscout.com/icons/cloud" target="_blank">Cloud Icon</a> by <a href="https://iconscout.com/contributors/chamedesign" target="_blank">Chameleon Design</a>--->
+            <img class="greyscale" src="../prospectphoto/cloud.svg" id='cloud' style="height:300px;">
+        </div>
+    </div>
+</div>
+
+<div class=" position-fixed bottom-0 end-0 p-3" style="z-index: 99;">
+
+    <div class="toast" id="welcome" role="alert"  data-bs-autohide="false" aria-live="assertive" aria-atomic="true" >
+        <div class="toast-header">
+            <img src="../profilepic/profile.jpg" style="width:25px;" class="rounded me-2" alt="...">
+            <strong class="mr-auto">ZhuoFan</strong>
+
+            <small>&nbsp; Now &nbsp;&nbsp;&nbsp;&nbsp;</small>
+
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">
+            </button>
+        </div>
+
+        <div class="toast-body">
+            Hello! Have fun knowing more about my course and the future prospect.<br>Hope that you can find what you want!! :)
+        </div>
+    </div>
+</div>
+</body>
+</html>

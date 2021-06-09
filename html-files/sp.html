@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> ZhuoFan's SP Life</title>
+    <meta name="keywords" content="ZhuoFan,sp,daaa,卓凡,ChenZhuofan,Chen,ZHUOFAN,CHEN">
+    <link rel="icon" href="../profilepic/profile.jpg"/>
+    <meta name="description"  content="Personal Website | ZhuoFan | I am 17 years old this year.Currently a student studying in Singapore Polytechnic.I love to play badminton and to do coding<br>Click to know more about me:)">
+    <meta name="name" content="ZhuoFan">
+    <meta name="image" content="profile.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/sp.css" rel="stylesheet">
+    <script src="../js/sp.js"></script>
+</head>
+<body>
+<header>
+    <nav id='nav' class="navbar py-4 navbar-expand-md navbar-light fixed-top bg-white">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ZhuoFan | SP Life&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class=" navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="secondary.html" >Secondary School</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="sp.html" >SP Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="future.html" >Future Prospect</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="feedback.html" >Feedback</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <img src="../searchbaricons/search.png" id="search" alt="search"/>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+<div class="container-fluid searchbaranimation" id="searchbar">
+    <input type="text" class="searchbox" placeholder="Search..">
+</div>
+<div class="container-fluid margintop grey">
+    <div class="container">
+        <div class="row text-center textfly">
+            <div class="col-12 text-center">
+                <img alt="DAAA Class Photo" class='greyscale' id="daaaimg" src="../spphoto/daaa.jpg" style="width:696px; height:500px;">
+
+            </div>
+            <div class="col-12 text-center">
+                <br><br>
+                <h1>Singapore Polytechnic Experience</h1>
+                <p>View first impressions and things about Singapore Polytechnic</p>
+                <img  onclick="window.location.href='sp.html#spsection1';" src="../svg/arrow-down-square.svg" alt="arrow" style="height:50px;cursor:pointer;">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container margintop" id="spsection1">
+    <div class="row"  id="spsection">
+        <div class="col-md-6 col-sm-12">
+            <h1>First <span style="color:royalblue" class="typing" id="type" ></span><span style="color:royalblue" class="cursor">|</span> </h1>
+            <p>It has been 11 days since school started. When I first walked into SP on 14 April 2021 for a freshman orientation program, I was actually kind of excited to meet new people and see new things. My first impression of SP is that it is really big. There are many buildings in SP which some are pretty cool. They are built in different styles. When I was like trying to find my way to T22 that day, I spend like 20 minutes trying to find and walk there. There are so many stairs and turns which is kind of confusing. Luckily, after walking a few times, at least now I can find my way to T22, T21, T19, and FC6.My first impression towards my personal tutor and classmate are quite good as I felt that they are quite welcoming and nice.We bonded well together during the orientation programme despite it being quite short. </p>
+            <script>
+
+                var r = 0;
+                var txt = "Impression";
+                var speed = 300;
+
+                function typeWriter() {
+                    var endtype= setInterval(function(){
+
+                        if (r < txt.length) {
+                            document.getElementById("type").innerHTML += txt.charAt(r);
+                            r++;
+                        }
+                    },300);
+
+                }
+
+                document.addEventListener('scroll',function(e){
+                    if (window.pageYOffset+window.innerHeight >document.querySelector("#spsection>div").offsetTop){
+
+                        typeWriter();
+                    }
+                    else{
+                        removetype();
+                    }
+
+
+                })
+            </script>
+        </div>
+        <div class="col-md-6 col-sm-12 text-end justify-content-end d-flex align-item-end">
+            <div id="carouselExampleSlidesOnly"  style='width:500px;height:400px;box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;' class=" carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div data-bs-interval="1700" class="carousel-item active">
+                        <img src="../spphoto/sp.jpg" style="height:400px;" class="d-block w-100"  alt="...">
+                    </div>
+                    <div data-bs-interval="1700" class="carousel-item">
+                        <img src="../spphoto/walk.jpg"  style="height:400px;" class="d-block w-100"  alt="...">
+                    </div>
+                    <div data-bs-interval="1700" class="carousel-item">
+                        <img src="../spphoto/t21.jpg" style="height:400px;" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid grey margintop" >
+    <div class="container">
+        <div class="row" id="studysection">
+            <div class="col-sm-12 col-md-6">
+<img src="../spphoto/Studying.svg" id="study" style="height:300px;" alt="study" class="greyscale">
+            </div>
+<div class="col-sm-12 col-md-6 text-end">
+    <h1><span style="color:orangered">Classmates</span> And <span style="color:purple">Classroom</span></h1>
+    <p>My class is a comparably small class which only consists of 19 people. They are quite helpful, when I have doubts and questions, they will be able to help/answer me. I do have fun interacting with them. For some of the people in the class, I have already known them previously as we have a small WhatsApp group for DAAA.So like it is quite easy for me to mix with them. I have also made nice friends in class like Gabriel, Justin, David, and Ella. We often hang out together to study or to have lunch.</p>
+    <p>The classes in SP are very different compared to secondary school. In secondary school, there is a fixed classroom for lessons and 1 class there are about 40 people. In contrast, in SP, there are separate classrooms for different modules and there are only 19-20 people per class. Most importantly, there is an air-con in every classroom so the environment is quite conducive for learning.</p>
+</div>
+        </div>
+    </div>
+</div>
+<div class="container margintop">
+    <div class="row">
+<div class="col-sm-12 col-md-6">
+    <h1><span style="color:forestgreen">Lessons</span> In SP</h1>
+    <p>Well, for the lessons, the lessons in SP are very intensive, there are a lot of things about self-directed learning and personal responsibility so time management is important. We need to do extra search-ups after school so that we will have a better understanding of things taught in class. Additionally, the people in my class are all muggers so since the first week of school, I had been staying up till 2 am to do my module work. With CA2, coming in less than a month, the workload has become heavier and more time has to be spent. For poly, it is unlike secondary when your teachers will chase you for your homework if you never do. In SP, everything is on yourself, you need to take the initiative to check on various things and if you are late for an assignment, it is equivalent to 0 marks. However, the teachers I have met are really kind as they answered all the doubts I have in lessons and have tried to help me a lot with the assignments.</p>
+</div>
+        <div class="col-sm-12 col-md-6 d-flex justify-content-end align-content-end ">
+            <div  class="  singaporepoly" id="singaporepoly" ></div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid grey margintop">
+    <div class="container" id="foodsection">
+        <div class="row">
+            <div class="col-sm-12 col-md-6">
+<img src="../spphoto/fast-food.svg" style="height: 300px;" id="food" alt="food" class="greyscale">
+            </div>
+<div class="col-sm-12 col-md-6 text-end">
+    <h1><span style="color:goldenrod">Food</span> In SP</h1>
+    <p>For food in SP, the chicken rice and the Taiwanese food in FC4 is the best !! .The food is nice and the price is also affordable. The waffle and the teriyaki ball store in FC6 are the second best. (Personal opinion). But as FC4 is a bit far from T2X, so for convenience wise, I visited FC6 more frequently as it is just below T2X. Till today, I have only managed to visit FC4,5and 6 . Hope that one day can have a chance to visit FC1-3 too HAHA. But overall, I think every food court has something special.</p>
+</div>
+        </div>
+    </div>
+</div>
+<div class="container margintop">
+    <div class="row">
+
+<div class="col-sm-12 col-md-6 ">
+    <h1>Lastly...<span style="color:rosybrown" >Conclusion</span></h1>
+    <p>Well, SP is really big and I have just only explored a small part of it (sometimes I still get lost) so in the next 3 years of polytechnic life, there is a lot for me to explore. Academics-wise, I will put in 120% in every assignment, hopefully, I can get a 4.0 GPA in the end, continue my studies and eventually achieve my dream.</p>
+</div>
+        <div class="col-sm-12 col-md-6 text-end ">
+            <img src="../spphoto/sp-logo.png" alt="sp logo" style="position:relative;top:50px;">
+        </div>
+    </div>
+</div>
+<div class=" position-fixed bottom-0 end-0 p-3" style="z-index: 99;">
+
+    <div class="toast" id="welcome" role="alert"  data-bs-autohide="false" aria-live="assertive" aria-atomic="true" >
+        <div class="toast-header">
+            <img src="../profilepic/profile.jpg" style="width:25px;" class="rounded me-2" alt="...">
+            <strong class="mr-auto">ZhuoFan</strong>
+
+            <small>&nbsp; Now &nbsp;&nbsp;&nbsp;&nbsp;</small>
+
+            <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">
+            </button>
+        </div>
+
+        <div class="toast-body">
+            Hello!I have just joined SP for a few month. Have fun viewing my Singapore Polytechnic experience till today.<br>Have a nice day!! :)
+        </div>
+    </div>
+</div>
+</body>
+</html>

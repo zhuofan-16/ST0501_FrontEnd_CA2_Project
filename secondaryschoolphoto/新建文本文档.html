@@ -13,31 +13,48 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     <link href="../css/index.css" rel="stylesheet">
-    <script src="../js/welcome.js"></script>
-    <script src="../js/searchbar.js"></script>
+    <script src="test.js"></script>
     <style>
+#photo{
+    width:794px;
+    height:798px;
+    margin:0;
+    padding:0;
+    background-color:#e6edff;
 
+}
+#photocontainer{
+
+    background:url("../aboutmephoto/greeting.jpg");
+    width:696px;
+    height:1000px;
+    transform: rotate(180deg);
+    animation:spinday 4s ,3s alternate;
+    -webkit-animation-fill-mode:forwards;
+
+}
+#topcontainer{
+    width:696px;
+    height:500px;
+    overflow: hidden;
+    margin:0;
+    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
+    padding:0;
+}
+
+@keyframes spinday { 100% {  transform:rotate(360deg); } }
+@keyframes spinnight { 100% {  transform:rotate(180deg); } }
     </style>
+
 </head>
 <body>
 <div class="container">
 <div class="row text-center">
-
-    <div class="col-md-6 ">
-        <div id="carouselExampleSlidesOnly"  style='width:400px;box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;' class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div data-bs-interval="1700" class="carousel-item active">
-                    <img src="../spphoto/sp.jpg" style="height:300px;" class="d-block w-100"  alt="...">
-                </div>
-                <div data-bs-interval="1700" class="carousel-item">
-                    <img src="../spphoto/walk.jpg"  style="height:300px;" class="d-block w-100"  alt="...">
-                </div>
-                <div data-bs-interval="1700" class="carousel-item">
-                    <img src="../spphoto/t21.jpg" style="height:300px;" class="d-block w-100" alt="...">
-                </div>
-            </div>
-        </div>
-    </div>
+    <div class="col-12" id="topcontainer">
+<div id="photo">
+<div id="photocontainer"></div>
+</div>
+</div>
 </div>
 </div>
 

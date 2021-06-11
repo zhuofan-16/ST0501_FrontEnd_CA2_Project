@@ -134,4 +134,19 @@ window.onload=function() {
         timegreet.innerHTML+="Good Night!"
     }
 
+
+
+
+    var fly=document.getElementById("photofly");
+    document.addEventListener('scroll',function(e){
+        var top1=window.pageYOffset+window.innerHeight;
+        isVisible=top1> document.querySelector("#quotesection>div").offsetTop;
+        if (isVisible){
+            fly.classList.add("textfly");
+        }else{
+            fly.classList.remove('textfly');
+        }
+
+
+    })
 }

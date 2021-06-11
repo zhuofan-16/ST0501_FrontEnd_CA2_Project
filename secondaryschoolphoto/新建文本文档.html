@@ -15,31 +15,8 @@
     <link href="../css/index.css" rel="stylesheet">
     <script src="test.js"></script>
     <style>
-#photo{
-    width:794px;
-    height:798px;
-    margin:0;
-    padding:0;
-    background-color:#e6edff;
-
-}
-#photocontainer{
-
-    background:url("../aboutmephoto/greeting.jpg");
-    width:696px;
-    height:1000px;
-    transform: rotate(180deg);
-    animation:spinday 4s ,3s alternate;
-    -webkit-animation-fill-mode:forwards;
-
-}
-#topcontainer{
-    width:696px;
-    height:500px;
-    overflow: hidden;
-    margin:0;
-    box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
-    padding:0;
+html{
+    background: #6b5b95;
 }
 
 @keyframes spinday { 100% {  transform:rotate(360deg); } }
@@ -48,15 +25,43 @@
 
 </head>
 <body>
-<div class="container">
-<div class="row text-center">
-    <div class="col-12" id="topcontainer">
-<div id="photo">
-<div id="photocontainer"></div>
+<div class="accordion" id="accordionExample">
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                School Graduation Testimonial
+            </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <iframe style="width:100%;height:500px;" id="testimonial1" src="../testimonialpdf/SGC.pdf"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                Teachers Testimonial 1
+            </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <iframe style="width:100%;height:500px;" id="testimonial2" src="../testimonialpdf/Mschantestimonial.pdf"></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="accordion-item">
+        <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Teachers Testimonial 2
+            </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+                <iframe style="width:100%;height:500px;" id="testimonial3" src="../testimonialpdf/testimonial3.pdf"></iframe>
+            </div>
+        </div>
+    </div>
 </div>
-</div>
-</div>
-</div>
-
 </body>
 </html>

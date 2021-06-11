@@ -86,6 +86,9 @@ html{
 .textfly{
     animation: cover 2s , 3s alternate ;/*Add animation */
 }
+.textfly{
+    animation: fly 2s , 3s alternate ;/*Add animation */
+}
 @keyframes blink {
     0% {opacity: 1;}
     40% {opacity: 1;}

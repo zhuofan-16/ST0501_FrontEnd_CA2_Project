@@ -71,16 +71,131 @@
                 <br><br>
                 <h1><span id="timegreeting"></span></h1>
                 <p>Welcome to about me page ,know more about me ! :)</p>
-                <img  onclick="window.location.href='future.html#daaareflection';" src="../svg/arrow-down-square.svg" alt="arrow" style="height:50px;cursor:pointer;">
+                <img  onclick="window.location.href='about.html#aboutmeover;'" src="../svg/arrow-down-square.svg" alt="arrow" style="height:50px;cursor:pointer;">
             </div>
         </div>
 
     </div>
 </div>
-<div class="container margintop">
+<div class="container margintop" id='aboutmeover'>
     <div class="row">
         <div class="col-sm-12 col-md-6">
+            <h1>Overview <span id='type'  style='color:royalblue;'></span><span class="cursor" style='color:royalblue'>|</span></h1>
+            <p>I am ZhuoFan,17 years old this year. My full name is Chen ZhuoFan,陈卓凡. Since young, I have a deep interest in software-related stuff as I am quite attracted by the UI and the functionality of programs. I always wonder how these things ever work. Hence, I have started to go into android development when I was in Primary 6, throughout the years, I have learned a lot of skills and knowledge that allow me to embark on various android development projects like LineageOS and Remix Resurrection OS. In 2018, with groups of developers that have the same interest, we established a project called exthmUI which is a custom ROM based on LineageOS but with additional features by us. Through these projects, I have learned quite a lot of things. Aside from the new knowledge, I also learned to persevere while I met errors. In 2019, I have a friend that encouraged me to learn C languages. Hence, I have started learning C programming since then. I have read various books and watch videos about it and have tried to put what I learn into practice. Every time I manage to do something that I am not able to do in the past, I will feel kind of happy as I feel that I have progressed. This encourages me to keep digging into the C language. Now I can make some small programs using it.In 2021,during the long holiday after O'Level ,I have started my learning on JavaScript and HTML.</p>
+        </div>
+        <div class='col-sm-12 col-md-6 d-flex justify-content-end align-item-end'>
+            <section id="slider">
+                <input type="radio" name="slider" id="s1" checked>
+                <input type="radio" name="slider" id="s2">
+                <input type="radio" name="slider" id="s3" >
+                <label for="s1" id="slide1"></label>
+                <label for="s2" id="slide2"></label>
+                <label for="s3" id="slide3"></label>
+            </section>
+        </div>
+    </div>
+</div>
+<script>
+    
+    var r = 0;
+    var txt = "About Me";
+    var speed = 300;
 
+    function typeWriter() {
+        var endtype= setInterval(function(){
+
+            if (r < txt.length) {
+                document.getElementById("type").innerHTML += txt.charAt(r);
+                r++;
+            }
+        },300);
+        endtype();
+        clearTimeout(endtype);
+    }
+
+    document.addEventListener('scroll',function(e){
+        if (window.pageYOffset+window.innerHeight >document.querySelector("#aboutmeover>div").offsetTop){
+
+            typeWriter();
+        }
+        else{
+            removetype();
+        }
+
+
+    })
+</script>
+<div class="container-fluid margintop grey">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="contain">
+            <h1><span style="color:forestgreen"> Personality</span></h1>
+                <p></p>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 text-end">
+                <div class="contain">
+                <h1><span style="color:orangered">Quote</span> And <span style="color:purple">Inspiration</span> </h1>
+                <figure>
+                    <blockquote class="blockquote" style="font-size:14px;">
+                        <br>
+                        <p>"Let your dreams be bigger than your fears and your actions be louder than your words."</p>
+                        <p>"让梦想大于胆怯，让行动强于语言"</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer" style="font-size:12px;">
+                        Extracted from <cite title="Source Title">Nicky Gumbel</cite>
+                    </figcaption>
+                </figure>
+                <p>This is a quote that I read a few years back.I agreed with it quite a lot .This quote has inspired me to be not afraid of difficulties and to take action. Everyone has a dream but it is whether you are willing to face the difficulties while you are chasing your dream. If one is afraid of challenges and obstacles ahead, he/she eventually fails. I thought that if you want to achieve something, the first thing is to have the confidence to face the difficulties and not be afraid of them. I believe that there are always more solutions than problems. Another thing is that in life people can say a lot of things but whether they will take action is another thing. Saying but not doing eventually leads to failure hence, I always believe that you will achieve something only if you take action. Actions are important.
+                </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container margintop ">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+            <h1><span style="color:darkcyan">Education</span> Background</h1>
+            <p></p>
+        </div>
+        <div class="col-md-6 col-sm-12 text-end">
+
+        </div>
+    </div>
+</div>
+<div class="container-fluid margintop grey">
+    <div class="row">
+        <div class="col-md-6 col-sm-12">
+
+        </div>
+        <div class="col-md-6 col-sm-12">
+            <h1>Achievements and Certification</h1>
+            <p></p>
+        </div>
+    </div>
+</div>
+<div class="container margintop ">
+    <div class="row">
+        <div class="col-sm-12 col-md-12 text-center">
+            <h1>Testimonials</h1>
+            <p></p>
+        </div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+        <div class="col"></div>
+    </div>
+
+</div>
+<div class="container-fluid margintop grey">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+                <h1><span style="color:gold">Contact</span> Me</h1>
+            </div>
         </div>
     </div>
 </div>

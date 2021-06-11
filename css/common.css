@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 #search{
     width:30px;
@@ -95,10 +96,7 @@ html{
     animation: blink .6s linear infinite alternate;
 }
 @keyframes typing { from { width: 0;} }
-#type{
 
-
-}
 .greyscale{
 
     animation:greys 3s ,3s alternate;

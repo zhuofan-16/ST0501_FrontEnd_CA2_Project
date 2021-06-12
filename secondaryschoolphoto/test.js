@@ -1,13 +1,30 @@
 window.onload=function(){
-    var currenttime=new Date();
-    var currenthour=currenttime.getHours();
-    var day=document.getElementById("photocontainer");
-    if (currenthour>=18){
-        document.getElementById("photo").style.backgroundColor="#fff7f4";
-        day.style.transform="rotate(0deg)";
-        console.log(day.style.transform);
-        day.style.animation="spinnight 4s ,3s alternate";
-        console.log(day.style.animation);
-        day.style.webkitAnimationFillMode="forwards";
-    }
-};
+var submit= document.getElementById("submit");
+submit.onclick=function(){
+var name=document.getElementById("fname").value;
+var comment=document.getElementById("comment").value;
+    var tr=document.getElementById("tr");
+tr.innerHTML+="<div class=\"col\">" +
+    "<div class=\"card text-dark bg-light mb-3\" style=\"max-width: 18rem;\">" +
+    "<div class=\"card-header\">"+
+    "<img src='../feedback/android-contacts-icon-png-20.jpg' style=\"height:30px;\" class=\"rounded me-2\" alt=\"...\">"+name+
+  "</div>"+
+    "<div class=\"card-body\">"+
+    "<p  class=\"card-text\">" +comment+ "</p>" +
+    "</div>" +
+    "<div class='card-footer'>"+
+    "  <small class=\"text-muted\">"+
+    Date()+
+    "</small>"+
+    "</div>"+
+    "</div>" +
+    "</div>"
+    return false;
+
+
+
+
+}
+
+
+}

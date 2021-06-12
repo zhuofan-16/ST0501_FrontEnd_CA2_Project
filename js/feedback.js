@@ -42,7 +42,8 @@ window.onload=function() {
 
         var form=document.getElementById("form");
         form.reset();
-        alert("Your submission is successful!Thank you :>")
+        window.location.href="feedback.html#";
+        alert("Your submission is successful!Thank you :>");
         return false;
 
 

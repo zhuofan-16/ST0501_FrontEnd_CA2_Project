@@ -45,3 +45,16 @@ width:100%;
 #submit:hover{
     background-color:#e0e699;
 }
+#btnmodel{
+    background-color:cornflowerblue;
+    border:none;
+    font-size:20px;
+    width:30%;
+    color:black;
+    height:3rem;
+    border-radius: 30px;
+    font-weight:500;
+}
+#btnmodel:hover{
+    background-color:royalblue;
+}

@@ -20,7 +20,7 @@
 <header>
     <nav id='nav' class="navbar py-4 navbar-expand-md navbar-light fixed-top bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">ZhuoFan | Feedback&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class="navbar-brand" href="#"><img src="../profilepic/profile.jpg" class="d-inline-block align-text-top rounded me-2" style="height:30px;"  alt="ZhuoFan">ZhuoFan | Feedback&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -95,7 +95,7 @@
                     <br><br>
                     <h1>Feedback Wall</h1>
                     <p>All feedback written will be shown at the wall above<br>Write your first feedback today!!</p>
-                    <img  onclick="window.location.href='feedback.html#feedbackform;'" src="../svg/arrow-down-square.svg" alt="arrow" style="height:50px;cursor:pointer;">
+                    <img  onclick="window.location.href='feedback.html#feedbackform'" src="../svg/arrow-down-square.svg" alt="arrow" style="height:50px;cursor:pointer;">
                 </div>
             </div>
             </div>
@@ -103,7 +103,7 @@
     </div>
 </div>
 
-<div class="container margintop">
+<div class="container margintop" id="feedbackform">
     <div class="row">
 <div class="col-12 text-center">
     <h1><span style="color:royalblue">Enquiry</span> and <span style="color:mediumseagreen">Feedback</span></h1>
@@ -129,7 +129,7 @@
                 <label class="h4" for="date">Date of visit</label><br>
                 <input type="date" class="commonform" id="date" name="date"><br><br>
                 <label class="h4" for="email" >Email</label><br>
-                <input type="email"class="commonform" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email"><br><br>
+                <input type="email" class="commonform" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" name="email"><br><br>
                 <label class="h4" for="country">Country</label><br>
                 <select id="country" name="country" class="notcommonform2">
                     <option value="" selected disabled hidden>Select your country</option>
@@ -384,6 +384,59 @@
                 <label class="formtext" for="agree">I've read and agreed to User Agreement and Privacy Policy</label>
               <br><br>
                 <input id="submit" class="submit" type="submit"/>
+                <button type="button" id="btnmodel" class="btn btn-primary" data-bs-toggle="modal" data-target="#exampleModal" data-bs-target="#exampleModal">User Agreement</button>
+                <div class="modal fade modal-dialog-scrollable" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">User Agreement and Privacy Policy</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p><strong>Please read this carefully.</strong></p>
+                                <!---Expanded text--Text generated using https://www.termsfeed.com/eula-generator\\--->
+                                <h1>End-User License Agreement ("Agreement")</h1>
+                                <h2>Last updated: May 19, 2021</h2>
+                                Please read this End-User License Agreement carefully before clicking the "I've read and agreed to User Agreement and Privacy Policy" button, downloading or using ZhuoFan's Portfolio.
+                                <h1> Interpretation and Definitions</h1>
+                                <h2>Interpretation</h2>
+                                The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.
+                                <h2> Definitions</h2>
+                                For the purposes of this End-User License Agreement:
+                                Agreement means this End-User License Agreement that forms the entire agreement between You and the Company regarding the use of the Application. This Agreement has been created with the help of the EULA Generator.
+                                Application means the software program provided by the Company downloaded by You to a Device, named ZhuoFan's Portfolio
+                                Company (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to ZhuoFan's Portfolio.
+                                Content refers to content such as text, images, or other information that can be posted, uploaded, linked to or otherwise made available by You, regardless of the form of that content.
+                                Country refers to: Singapore
+                                You means the individual accessing or using the Application or the company, or other legal entity on behalf of which such individual is accessing or using the Application, as applicable.
+                                <h2> Acknowledgment</h2>
+                                By clicking the "I Agree" button, downloading or using the Application, You are agreeing to be bound by the terms and conditions of this Agreement. If You do not agree to the terms of this Agreement, do not click on the "I Agree" button, do not download or do not use the Application.
+                                This Agreement is a legal document between You and the Company and it governs your use of the Application made available to You by the Company.
+                                The Application is licensed, not sold, to You by the Company for use strictly in accordance with the terms of this Agreement.
+                                <h2>Third-Party Services</h2>
+                                The Application may display, include or make available third-party content (including data, information, applications and other products services) or provide links to third-party websites or services.
+                                You acknowledge and agree that the Company shall not be responsible for any Third-party Services, including their accuracy, completeness, timeliness, validity, copyright compliance, legality, decency, quality or any other aspect thereof. The Company does not assume and shall not have any liability or responsibility to You or any other person or entity for any Third-party Services.
+                                You must comply with applicable Third parties' Terms of agreement when using the Application. Third-party Services and links thereto are provided solely as a convenience to You and You access and use them entirely at your own risk and subject to such third parties' Terms and conditions.
+                                <h2>Changes to this Agreement</h2>
+                                The Company reserves the right, at its sole discretion, to modify or replace this Agreement at any time. If a revision is material we will provide at least 30 days' notice prior to any new terms taking effect. What constitutes a material change will be determined at the sole discretion of the Company.
+                                By continuing to access or use the Application after any revisions become effective, You agree to be bound by the revised terms. If You do not agree to the new terms, You are no longer authorized to use the Application.
+                                <h2>Governing Law</h2>
+                                The laws of the Country, excluding its conflicts of law rules, shall govern this Agreement and your use of the Application. Your use of the Application may also be subject to other local, state, national, or international laws.
+                                <h2> Entire Agreement</h2>
+                                The Agreement constitutes the entire agreement between You and the Company regarding your use of the Application and supersedes all prior and contemporaneous written or oral agreements between You and the Company.
+                                You may be subject to additional terms and conditions that apply when You use or purchase other Company's services, which the Company will provide to You at the time of such use or purchase.
+                                <h2>Contact Us</h2>
+                                If you have any questions about this Agreement, You can contact Us:<br>
+                                By email: zhuofan.21@ichat.sp.edu.sg<br>
+                                By phone number: +65 83836591
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button onclick="window.location.href='https://github.com/zhuofan-16/hanpdf/raw/main/End-User%20License%20Agreement%20(_Agreement_).pdf'" type="button" class="btn btn-primary">Download</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </form>
         </div>
         <div class="col-sm-12 col-lg-6 text-end  ">

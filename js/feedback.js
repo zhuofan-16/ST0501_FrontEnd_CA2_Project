@@ -39,7 +39,13 @@ window.onload=function() {
             "</div>"+
             "</div>" +
             "</div>"
+
+        var form=document.getElementById("form");
+        form.reset();
+        alert("Your submission is successful!Thank you :>")
         return false;
+
+
 
 
 

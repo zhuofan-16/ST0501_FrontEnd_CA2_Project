@@ -4,3 +4,44 @@
 #feedbackwall{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"
 }
+.commonform{
+width:100%;
+    outline: none;
+    border:none;
+    border-bottom:1px solid black;
+}
+.notcommonform{
+    width:20%;
+    outline: none;
+    border:none;
+    border-bottom:1px solid black;
+    background: none;
+}
+.notcommonform2{
+    width:100%;
+    outline: none;
+    border:none;
+    border-bottom:1px solid black;
+    background: none;
+}
+#last{
+    width:79%;
+}
+#comment{
+    width:100%;
+    border:1px solid black;
+
+}
+#submit{
+    background-color:mediumspringgreen;
+    border:none;
+    font-size:20px;
+    width:30%;
+    height:3rem;
+    border-radius: 30px;
+
+    font-weight:500;
+}
+#submit:hover{
+    background-color:#e0e699;
+}

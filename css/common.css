@@ -74,7 +74,8 @@ html{
     position:absolute;
     left:50%;
     text-align: center;
-    top:50%;
+    top:60%;
+    color:white;
     transform: translate(-50%, -50%);
     animation: fly 2s , 3s alternate ;/*Add animation */
 

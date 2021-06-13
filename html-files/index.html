@@ -56,17 +56,17 @@
     <input type="text" class="searchbox" placeholder="Search..">
 </div>
 <div class="container-fluid mainvideo">
-    <video src="../cover/cover.mp4" preload="auto" autoplay="autoplay" loop="loop"  muted="">    </video>
 </div>
 <!--Start of About me section-->
 <div class="container mainname">
     <h1 id="enlarge">CHEN ZHUOFAN</h1> <br> <br>
-    <h3>My Experience in Poly and My Career Prospect</h3>
+    <h3>My Experience in Poly and My Career Prospect</h3><br><br>
+    <img  onclick="window.location.href='index.html#aboutmesum';"  src="../svg/arrow-down-square.svg" alt="arrow" style="height:50px;cursor:pointer;filter:invert(100%);">
 </div>
-<div class="container align-items-center justify-content-center margintop">
+<div class="container align-items-center justify-content-center margintop" id="aboutmesum">
     <div class="row align-items-center about">
-        <div class="col-md-6 col-sm-12">
-            <h1 class="header">About Me</h1>
+        <div class="col-md-6 col-sm-12" >
+            <h1 class="header">Something <span id='type'  style='color:royalblue;'></span><span class="cursor" style='color:royalblue'>|</span></h1>
             <br>
             <p>I am 17 years old this year.<br>Currently a student studying in Singapore Polytechnic.<br>I love to play badminton and do coding </p>
 
@@ -83,12 +83,42 @@
         </div>
     </div>
 </div>
+<script>
+
+    var r = 0;
+    var txt = "About Me";
+    var speed = 300;
+
+    function typeWriter() {
+        var endtype= setInterval(function(){
+
+            if (r < txt.length) {
+                document.getElementById("type").innerHTML += txt.charAt(r);
+                r++;
+            }
+        },300);
+        endtype();
+        clearTimeout(endtype);
+    }
+
+    document.addEventListener('scroll',function(e){
+        if (window.pageYOffset+window.innerHeight >document.querySelector("#aboutmesum>div").offsetTop){
+
+            typeWriter();
+        }
+        else{
+            removetype();
+        }
+
+
+    })
+</script>
 <!--Start of Secondary School section-->
 <div class="container-fluid grey margintop">
 <div class="container ">
     <div class="row">
         <div class="col-12 text-center">
-        <h1>Secondary School Life</h1>
+        <h1><span style="color:forestgreen"> Secondary School</span> Life</h1>
 <p>I was a student of Dunearn Secondary School from 2017 to 2020. <br>I have enjoyed myself in these 4 years of secondary school life. In these 4 years, I have experienced a lot of things, some are bad, some are good, but all of these have allowed me to mature into the person I am today --one perceptive to the needs of others and one who dares to lead with passion and purpose. I am thankful to all my teachers and friends that have walked with me through this 4-year journey.</p>
        <br>
             <br>
@@ -124,7 +154,7 @@
      <div  class=" singaporepoly" id="singaporepoly" ></div>
         </div>
         <div class="col-lg-6 col-sm-12 text-end">
-    <h1>Singapore Polytechnic Experience</h1>
+            <h1><span style="color:red">Singapore Polytechnic</span> Experience</h1>
 <p>I am a AY2021 Student currently studying in Singapore Polytechnic.<br>In the course of Diploma in Applied AI and Analytics.School have started for around 5 month.<br>Find out more about my experience here! </p>
         </div>
 
@@ -134,7 +164,7 @@
 <!--Start of More Option section-->
 <div class="container-fluid margintop grey ">
 <div class="  container ">
-    <h1>More Options</h1>
+    <h1>More <span style="color:slategray">Options</span></h1>
     <br><br>
 
     <div class=" row">

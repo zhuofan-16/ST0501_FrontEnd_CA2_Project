@@ -109,7 +109,15 @@ window.onload=function() {
             }
         }, 1500)
     })
+    var option =
+        {
+            animation: true,
+            delay: 2000
+        };
 
+    var toastHTMLElement = document.getElementById('welcome');
+    var toastElement = new bootstrap.Toast(toastHTMLElement, option);
+    toastElement.show();
 
 
     var fly=document.getElementById("photofly");

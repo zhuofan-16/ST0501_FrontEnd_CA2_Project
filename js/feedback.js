@@ -18,6 +18,19 @@ window.onload=function() {
         searchbar.classList.add("searchbaranimation");
     });
 
+    var option =
+        {
+            animation: true,
+            delay: 2000
+        };
+
+    var toastHTMLElement = document.getElementById('welcome');
+    var toastElement = new bootstrap.Toast(toastHTMLElement, option);
+    var toastHTMLElement2 = document.getElementById('sucessfd');
+    var toastElement2 = new bootstrap.Toast(toastHTMLElement2, option);
+    toastElement.show();
+
+
 
     var submit= document.getElementById("submit");
     submit.onclick=function(){
@@ -44,6 +57,7 @@ window.onload=function() {
         form.reset();
         window.location.href="feedback.html#";
         alert("Your submission is successful!Thank you :>");
+        toastElement2.show();
         return false;
 
 
@@ -52,5 +66,8 @@ window.onload=function() {
 
 
     }
+
+
+
 
 }

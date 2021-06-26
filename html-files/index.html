@@ -53,8 +53,61 @@
     </nav>
 </header>
 <div class="container-fluid searchbaranimation" id="searchbar">
-    <input type="text" class="searchbox" placeholder="Search..">
+    <div class="row ">
+        <div class="col-12 ">
+
+        <input type="text" id="sbar" onkeyup="searchfeature()" class="form-control" style="position:relative;top:30%;:500px;height:60px;outline:none;font-size: 40px;border:1px solid grey;border-radius:5px;" placeholder="Search..">
+       <br>
+            <div class="col-12 " style="position:relative;top:30%;">
+        <table class="table table-light" id="searchtable" style="border-collapse: separate;display:none;">
+            <tr><th onclick="window.location.href='about.html'" style="cursor:pointer;" scope="row">About Me</th></tr>
+            <tr><th onclick="window.location.href='about.html#achievement'" style="cursor:pointer;" scope="row">Achievements and Certification</th></tr>
+            <tr><th onclick="window.location.href='sp.html#classmatese'" style="cursor:pointer;" scope="row">Classmates</th></tr>
+            <tr><th onclick="window.location.href='about.html#contactme'" style="cursor:pointer;" scope="row">Contact Me</th></tr>
+            <tr><th onclick="window.location.href='future.html#daaareflection'" style="cursor:pointer;" scope="row">Diploma Applied AI and Analytics</th></tr>
+            <tr><th onclick="window.location.href='about.html#education'" style="cursor:pointer;" scope="row">Education Background</th></tr>
+            <tr><th onclick="window.location.href='future.html#expsp'" style="cursor:pointer;" scope="row">Experience In Course</th></tr>
+            <tr><th onclick="window.location.href='feedback.html'" style="cursor:pointer;" scope="row">Feedback </th></tr>
+            <tr><th onclick="window.location.href='feedback.html'" style="cursor:pointer;" scope="row">Feedback Wall</th></tr>
+            <tr><th onclick="window.location.href='feedback.html#feedbackform'" style="cursor:pointer;" scope="row">Feedback Form</th></tr>
+            <tr><th onclick="window.location.href='sp.html#spsection1'" style="cursor:pointer;" scope="row">First Impression</th></tr>
+            <tr><th onclick="window.location.href='sp.html#foodsection'" style="cursor:pointer;" scope="row">Food</th></tr>
+            <tr><th onclick="window.location.href='future.html'" style="cursor:pointer;" scope="row">Future Prospect</th></tr>
+            <tr><th onclick="window.location.href='future.html#jobsection'" style="cursor:pointer;" scope="row">Future Job And Opportunities</th></tr>
+            <tr><th onclick="window.location.href='about.html#quotesection'" style="cursor:pointer;" scope="row">Quote And Inspiration</th></tr>
+            <tr><th onclick="window.location.href='about.html#testimonial'" style="cursor:pointer;" scope="row">Testimonial</th></tr>
+            <tr><th onclick="window.location.href='secondary.html'" style="cursor:pointer;" scope="row">Dunearn Secondary School</th></tr>
+            <tr><th onclick="window.location.href='secondary.html#secreflection'" style="cursor:pointer;" scope="row">Graduation</th></tr>
+            <tr><th onclick="window.location.href='secondary.html#learnertoday'" style="cursor:pointer;" scope="row">Learner Today,Leader Tomorrow</th></tr>
+            <tr><th onclick="window.location.href='secondary.html#learnertoday'" style="cursor:pointer;" scope="row">Leadership Development</th></tr>
+            <tr><th onclick="window.location.href='sp.html#splesson'" style="cursor:pointer;" scope="row">Lessons</th></tr>
+            <tr><th onclick="window.location.href='secondary.html#lifelong'" style="cursor:pointer;" scope="row">Lifelong Friends</th></tr>
+            <tr><th onclick="window.location.href='future.html#daaareflection'" style="cursor:pointer;" scope="row">My Course</th></tr>
+            <tr><th onclick="window.location.href='sp.html'" style="cursor:pointer;" scope="row">Singapore Polytechnic</th></tr>
+            <tr><th onclick="window.location.href='feedback.html#btnmodel'" style="cursor:pointer;" scope="row">User Agreement </th></tr>
+        </table>
+            </div>
+        </div>
+    </div>
 </div>
+<script>
+    function searchfeature(){
+    var tables=document.getElementById("searchtable");
+    var input=document.getElementById("sbar").value.toUpperCase();
+    var li=tables.getElementsByTagName("tr");
+   for (var l=0;l<li.length;l++){
+        if (li[l].textContent.toUpperCase().indexOf(input)===0){
+            li[l].style.display="";
+            tables.style.display=""
+        }else{
+            li[l].style.display="none";
+
+        }
+        if (input===""){
+            tables.style.display="none"
+        }
+    }}
+</script>
 <div class="container-fluid mainvideo">
 </div>
 <!--Start of About me section-->
@@ -68,6 +121,7 @@
         <div class="col-md-6 col-sm-12" >
             <h1 class="header">Something <span id='type'  style='color:royalblue;'></span><span class="cursor" style='color:royalblue'>|</span></h1>
             <br>
+
             <p>I am 17 years old this year.<br>Currently a student studying in Singapore Polytechnic.<br>I love to play badminton and do coding </p>
 
         </div>

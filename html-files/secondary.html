@@ -54,8 +54,61 @@
     </nav>
 </header>
 <div class="container-fluid searchbaranimation" id="searchbar">
-    <input type="text" class="searchbox" placeholder="Search..">
+    <div class="row ">
+        <div class="col-12 ">
+
+            <input type="text" id="sbar" onkeyup="searchfeature()" class="form-control" style="position:relative;top:30%;:500px;height:60px;outline:none;font-size: 40px;border:1px solid grey;border-radius:5px;" placeholder="Search..">
+            <br>
+            <div class="col-12 " style="position:relative;top:30%;">
+                <table class="table table-light" id="searchtable" style="border-collapse: separate;display:none;">
+                    <tr><th onclick="window.location.href='about.html'" style="cursor:pointer;" scope="row">About Me</th></tr>
+                    <tr><th onclick="window.location.href='about.html#achievement'" style="cursor:pointer;" scope="row">Achievements and Certification</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#classmatese'" style="cursor:pointer;" scope="row">Classmates</th></tr>
+                    <tr><th onclick="window.location.href='about.html#contactme'" style="cursor:pointer;" scope="row">Contact Me</th></tr>
+                    <tr><th onclick="window.location.href='future.html#daaareflection'" style="cursor:pointer;" scope="row">Diploma Applied AI and Analytics</th></tr>
+                    <tr><th onclick="window.location.href='about.html#education'" style="cursor:pointer;" scope="row">Education Background</th></tr>
+                    <tr><th onclick="window.location.href='future.html#expsp'" style="cursor:pointer;" scope="row">Experience In Course</th></tr>
+                    <tr><th onclick="window.location.href='feedback.html'" style="cursor:pointer;" scope="row">Feedback </th></tr>
+                    <tr><th onclick="window.location.href='feedback.html'" style="cursor:pointer;" scope="row">Feedback Wall</th></tr>
+                    <tr><th onclick="window.location.href='feedback.html#feedbackform'" style="cursor:pointer;" scope="row">Feedback Form</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#spsection1'" style="cursor:pointer;" scope="row">First Impression</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#foodsection'" style="cursor:pointer;" scope="row">Food</th></tr>
+                    <tr><th onclick="window.location.href='future.html'" style="cursor:pointer;" scope="row">Future Prospect</th></tr>
+                    <tr><th onclick="window.location.href='future.html#jobsection'" style="cursor:pointer;" scope="row">Future Job And Opportunities</th></tr>
+                    <tr><th onclick="window.location.href='about.html#quotesection'" style="cursor:pointer;" scope="row">Quote And Inspiration</th></tr>
+                    <tr><th onclick="window.location.href='about.html#testimonial'" style="cursor:pointer;" scope="row">Testimonial</th></tr>
+                    <tr><th onclick="window.location.href='secondary.html'" style="cursor:pointer;" scope="row">Dunearn Secondary School</th></tr>
+                    <tr><th onclick="window.location.href='secondary.html#secreflection'" style="cursor:pointer;" scope="row">Graduation</th></tr>
+                    <tr><th onclick="window.location.href='secondary.html#learnertoday'" style="cursor:pointer;" scope="row">Learner Today,Leader Tomorrow</th></tr>
+                    <tr><th onclick="window.location.href='secondary.html#learnertoday'" style="cursor:pointer;" scope="row">Leadership Development</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#splesson'" style="cursor:pointer;" scope="row">Lessons</th></tr>
+                    <tr><th onclick="window.location.href='secondary.html#lifelong'" style="cursor:pointer;" scope="row">Lifelong Friends</th></tr>
+                    <tr><th onclick="window.location.href='future.html#daaareflection'" style="cursor:pointer;" scope="row">My Course</th></tr>
+                    <tr><th onclick="window.location.href='sp.html'" style="cursor:pointer;" scope="row">Singapore Polytechnic</th></tr>
+                    <tr><th onclick="window.location.href='feedback.html#btnmodel'" style="cursor:pointer;" scope="row">User Agreement </th></tr>
+                </table>
+            </div>
+        </div>
+    </div>
 </div>
+<script>
+    function searchfeature(){
+        var tables=document.getElementById("searchtable");
+        var input=document.getElementById("sbar").value.toUpperCase();
+        var li=tables.getElementsByTagName("tr");
+        for (var l=0;l<li.length;l++){
+            if (li[l].textContent.toUpperCase().indexOf(input)===0){
+                li[l].style.display="";
+                tables.style.display=""
+            }else{
+                li[l].style.display="none";
+
+            }
+            if (input===""){
+                tables.style.display="none"
+            }
+        }}
+</script>
 <div class="container-fluid grey margintop textfly1" >
     <div class="container d-flex justify-content-center">
         <div id="carouselExampleCaptions" class="carousel slide" style="width:804px;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" data-bs-ride="carousel">
@@ -215,7 +268,7 @@
     </div>
 <div class="container-fluid margintop grey">
     <div class="container">
-        <div class="row">
+        <div class="row" id="learnertoday">
             <div class="col-md-12 col-sm-12 text-center ">
                 <h1><span style="color:mediumpurple">Learner</span>  Today,<span style="color:orange"> Leader</span> Tomorrow</h1>
                 <p>In these 4 years, I think I have grown especially in terms of leadership. My school has transformed me into a leader, till today I am still really thankful to the teachers that have trusted me and given me the opportunity to lead. In 2017, as a Secondary 1 student, I was lucky to get selected to become a junior student councillor which enabled me to learn a lot of things like to take initiative, be more responsible, and speak confidently. I have taken all the morning duties and the events I am participating in seriously. I always get to learn more things as the debrief after every event has allowed me to reflect on things that I have not done so well which enable me to correct myself and be a better leader. In 2019, I was nominated and chosen to be part of the Executive Committee of the 15th Student Council. This means that I will have more responsibilities in hand. As an exco member, I have always tried my best to plan the events as detailed as possible and to execute them smoothly. Through the events I have planned and led, I have a further understanding of leadership skills.I knew more about the responsibility in me.Additionally,I also learn more about proposal making and how to be flexible when carrying out events. I learn to react fast to unexpected situations, I learn to take care of my teammates, I learn to listen to other people’s opinions. While planning and executing events, I also forged strong bonds with my fellow councillors.As a senior , I always tried my best to teach my junior everything I have learned just like what my seniors have taught me. Aside from my student council role, I am also a physics representative for 3 years, a geographic representative for 1 year, and a staff sergeant in NPCC.I am really thankful to the everyone that has trusted me.</p>
@@ -288,7 +341,7 @@
     </div>
 </div>
 <div class="container margintop">
-    <div class="row">
+    <div class="row" id="lifelong">
         <div class="col-md-6 col-sm-12">
             <section id="slider">
                 <input type="radio" name="slider" id="s1" checked>

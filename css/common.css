@@ -52,17 +52,7 @@ html{
 .searchbaranimation{
     animation:cover 1s , 5s alternate;
 }
-.searchbox{
-    height:60px;
-    width:500px;
-    position:relative;
-    top:20%;
-    font-size: 40px;
-    border:1px solid grey;
-    border-radius: 30px;
-    outline: none;
-    padding-left: 20px;
-}
+
 .margintop{
     padding-top:200px;
     padding-bottom:200px ;
@@ -112,5 +102,9 @@ html{
     to {
         filter:grayscale(0%);
     }
+}
+#searchtable tr th a{
+    text-decoration: none;
+    color:black;
 }
 

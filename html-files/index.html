@@ -2,30 +2,44 @@
 <html lang="en" >
 <head>
     <meta charset="UTF-8">
+    <!-- Sets the width of the page to follow the screen-width of the device and zoom level when loaded-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Define page title to appear on tab-->
     <title>ZhuoFan's Home Page</title>
+    <!--Insert search keywords for search engine-->
     <meta name="keywords" content="ZhuoFan,sp,daaa,卓凡,ChenZhuofan,Chen,ZHUOFAN,CHEN">
+    <!---Set page icon to appear at tab-->
     <link rel="icon" href="../profilepic/profile.jpg"/>
+    <!---Set website description for search engine-->
     <meta name="description"  content="Personal Website | ZhuoFan | I am 17 years old this year.Currently a student studying in Singapore Polytechnic.I love to play badminton and to do coding<br>Click to know more about me:)">
     <meta name="name" content="ZhuoFan">
     <meta name="image" content="profile.jpg">
+    <!---Bootstrap 5 support--->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <!--Import common css throughout website-->
     <link href="../css/common.css" rel="stylesheet">
+    <!--Import page-specific css-->
     <link href="../css/index.css" rel="stylesheet">
+    <!--Import page-specific js-->
     <script src="../js/index.js"></script>
 </head>
+<!--Start of body-->
 <body>
+<!--Start of header-->
 <header>
     <nav id='nav' class="navbar py-4 navbar-expand-md navbar-light fixed-top bg-white">
+        <!--Remove the 20% gaps for navigation bar on page-->
         <div class="container-fluid">
+            <!-- Let profile picture to appear with page title-->
             <a class="navbar-brand" href="#"><img src="../profilepic/profile.jpg" class="d-inline-block align-text-top rounded me-2" style="height:30px;"  alt="ZhuoFan">ZhuoFan | Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class=" navbar-nav me-auto mb-2 mb-md-0">
+                    <!-- Navigation Items-->
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
@@ -45,6 +59,7 @@
                         <a class="nav-link" href="feedback.html" >Feedback</a>
                     </li>
                 </ul>
+                <!--Search button-->
                 <form class="d-flex">
                     <img src="../searchbaricons/search.png" id="search" alt="search"/>
                 </form>
@@ -52,12 +67,15 @@
         </div>
     </nav>
 </header>
+<!--End of header-->
+<!--Start of search overlay configuration-->
 <div class="container-fluid searchbaranimation" id="searchbar">
     <div class="row ">
         <div class="col-12 ">
-
+            <!--On typing ,search matching-->
         <input type="text" id="sbar" onkeyup="searchfeature()" class="form-control" style="position:relative;top:30%;:500px;height:60px;outline:none;font-size: 40px;border:1px solid grey;border-radius:5px;" placeholder="Search..">
        <br>
+            <!--Display search result in table-->
             <div class="col-12 " style="position:relative;top:30%;">
         <table class="table table-light" id="searchtable" style="border-collapse: separate;display:none;">
             <tr><th onclick="window.location.href='about.html'" style="cursor:pointer;" scope="row">About Me</th></tr>
@@ -90,7 +108,12 @@
         </div>
     </div>
 </div>
+<!--Search function script-->
 <script>
+    /*Logic:At default,the list is hidden .create a function that use indexOf to check for matching ,if matching it will be ===0,
+options matching will be list out by enable the display:css style .Else if not match, display:css style will be changed to none(ie list will not be
+shown).If the user did not input anything ,the whole table will be hidden.This function will key running upon detecting that there is a input(onkeyup).
+ */
     function searchfeature(){
     var tables=document.getElementById("searchtable");
     var input=document.getElementById("sbar").value.toUpperCase();
@@ -100,24 +123,31 @@
             li[l].style.display="";
             tables.style.display=""
         }else{
-            li[l].style.display="none";
+            li[l].style.display="none";/*If not found,hide*/
 
         }
         if (input===""){
-            tables.style.display="none"
+            tables.style.display="none"/*If user did not enter anything ,hide*/
         }
     }}
 </script>
+<!--This is the cover of page-->
+<!-- class mainvideo is the background image -->
 <div class="container-fluid mainvideo">
 </div>
 <!--Start of About me section-->
+<!--class mainname is used to position div at center-->
 <div class="container mainname">
     <h1 id="enlarge">CHEN ZHUOFAN</h1> <br> <br>
     <h3>My Experience in Poly and My Career Prospect</h3><br><br>
+    <!--Upon clicked ,slide to the first section-->
     <img  onclick="window.location.href='index.html#aboutmesum';"  src="../svg/arrow-down-square.svg" alt="arrow" style="height:50px;cursor:pointer;filter:invert(100%);">
 </div>
+
+<!--First section in Page-->
 <div class="container align-items-center justify-content-center margintop" id="aboutmesum">
     <div class="row align-items-center about">
+        <!--For medium screen size and about ,2 element on same line .For small screen size (ie.phone),1 element per line-->
         <div class="col-md-6 col-sm-12" >
             <h1 class="header">Something <span id='type'  style='color:royalblue;'></span><span class="cursor" style='color:royalblue'>|</span></h1>
             <br>
@@ -125,6 +155,8 @@
             <p>I am 17 years old this year.<br>Currently a student studying in Singapore Polytechnic.<br>I love to play badminton and do coding </p>
 
         </div>
+
+        <!--Photo at right occupying half of the line for medium size screen,and full line for small screen(next line)-->
         <div class="offset-md-2 col-md-4 col-sm-12 about1">
             <section id="slider">
                 <input type="radio" name="slider" id="s1" checked>
@@ -137,12 +169,14 @@
         </div>
     </div>
 </div>
+<!-- Script for typing effect for subtitles in First section-->
 <script>
 
     var r = 0;
     var txt = "About Me";
-    var speed = 300;
-
+    /*  Logic: Create a function that launches a timer that print letter by letter every 300ms .
+    Then create a monitor ,when user scroll to a section section,the function will be called
+     */
     function typeWriter() {
         var endtype= setInterval(function(){
 
@@ -167,46 +201,53 @@
 
     })
 </script>
-<!--Start of Secondary School section-->
+<!-- End of first section-->
+
+<!--Start of second section-->
+<!--Grey color section-->
 <div class="container-fluid grey margintop">
 <div class="container ">
     <div class="row">
-        <div class="col-12 text-center">
-        <h1><span style="color:forestgreen"> Secondary School</span> Life</h1>
+        <!--text of section at center and occupy full line-->
+       <div class="col-12 text-center">
+       <h1><span style="color:forestgreen"> Secondary School</span> Life</h1>
 <p>I was a student of Dunearn Secondary School from 2017 to 2020. <br>I have enjoyed myself in these 4 years of secondary school life. In these 4 years, I have experienced a lot of things, some are bad, some are good, but all of these have allowed me to mature into the person I am today --one perceptive to the needs of others and one who dares to lead with passion and purpose. I am thankful to all my teachers and friends that have walked with me through this 4-year journey.</p>
-       <br>
-            <br>
-        </div>
+      <br>
+           <br>
+       </div>
+<!--Unconfirmed div ,may consider changing in later date-->
+           <div class=" offset-1 col-11 container text-center">
+                       <div class="row text-center" >
+                           <div class="col-lg-3 col-sm-12" >
+                              <img id="secphoto1" src="../secondaryschoolphoto/IMG_20190204_101010.jpg" style="height:400px;width:330px;">
+                           </div>
+                           <div class="col-lg-3 col-sm-6 ">
+                               <img src="../secondaryschoolphoto/im.jpg" style="height:200px;width:330px;">
+                               <img src="../secondaryschoolphoto/1.jpg" style="height:200px;width:330px;">
+                           </div>
+                           <div class="col-lg-2 col-sm-6">
+                               <img src="../secondaryschoolphoto/school.jpg" style="height:200px;width:230px;">
+                               <img src="../secondaryschoolphoto/school3.jpg" style="height:200px;">
+                           </div>
+                           <div class="col-lg-3 col-sm-12">
+                               <img src="../secondaryschoolphoto/12.jpg" style="height:200px;">
+                               <img src="../secondaryschoolphoto/8.jpg" style="height:200px;">
+                           </div>
+                       </div>
 
-            <div class=" offset-1 col-11 container text-center">
-                        <div class="row text-center" >
-                            <div class="col-lg-3 col-sm-12" >
-                               <img id="secphoto1" src="../secondaryschoolphoto/IMG_20190204_101010.jpg" style="height:400px;width:330px;">
-                            </div>
-                            <div class="col-lg-3 col-sm-6 ">
-                                <img src="../secondaryschoolphoto/im.jpg" style="height:200px;width:330px;">
-                                <img src="../secondaryschoolphoto/1.jpg" style="height:200px;width:330px;">
-                            </div>
-                            <div class="col-lg-2 col-sm-6">
-                                <img src="../secondaryschoolphoto/school.jpg" style="height:200px;width:230px;">
-                                <img src="../secondaryschoolphoto/school3.jpg" style="height:200px;">
-                            </div>
-                            <div class="col-lg-3 col-sm-12">
-                                <img src="../secondaryschoolphoto/12.jpg" style="height:200px;">
-                                <img src="../secondaryschoolphoto/8.jpg" style="height:200px;">
-                            </div>
-                        </div>
-
-            </div>
+           </div>
 </div>
 </div>
 </div>
-<!--Start of Singapore Polytechnic section-->
+<!--End of second section-->
+<!--Start of third section-->
 <div id="spsection" class="container margintop">
     <div class="row">
+        <!--A image overlay effect component at left occupying half of the line for medium size screen,and full line for small screen-->
         <div class="col-lg-6 col-sm-12">
      <div  class=" singaporepoly" id="singaporepoly" ></div>
         </div>
+        <!--Text at left occupying right of the line for medium size screen,and full line for small screen-->
         <div class="col-lg-6 col-sm-12 text-end">
             <h1><span style="color:red">Singapore Polytechnic</span> Experience</h1>
 <p>I am a AY2021 Student currently studying in Singapore Polytechnic.<br>In the course of Diploma in Applied AI and Analytics.School have started for around 5 month.<br>Find out more about my experience here! </p>
@@ -215,15 +256,17 @@
         </div>
 
 </div>
-<!--Start of More Option section-->
+<!--End of third section-->
+<!--Start of forth section-->
 <div class="container-fluid margintop grey ">
 <div class="  container ">
     <h1>More <span style="color:slategray">Options</span></h1>
     <br><br>
 
     <div class=" row">
-
+<!--4 spinning card element ,appear all 4 in extralarge screen,2 in medium ,1 in small screen-->
     <div class="catt offset-sm-2 offset-md-0 col-lg-4 col-md-6 col-sm-8 col-xl-3">
+ <!--Card 1 (on hover flip to backside-->
     <div class="card" id='card1' style="width: 20rem; height: 25rem;">
       <div id="card1font">
         <img src="../optionspic/education-2.jpg" class="card-img-top" alt="...">
@@ -247,7 +290,8 @@
     </div>
         </div>
         <div class="catt offset-sm-2 offset-md-0 col-sm-8 col-md-6  col-lg-4 col-xl-3" >
-        <div class="card" id="card3" style="width: 20rem; height: 25rem;">
+            <!--Card 2 (on hover flip to backside-->
+            <div class="card" id="card3" style="width: 20rem; height: 25rem;">
           <div id="card3font">
             <img src="../optionspic/f46577af-22d1-4883-a.png" style="height:240px;" class="card-img-top" alt="...">
             <div class="card-body">
@@ -268,6 +312,7 @@
             </div>
 
         <div class="catt offset-sm-2 offset-md-0 col-sm-8 col-md-6  col-lg-4 col-xl-3" >
+            <!--Card 3 (on hover flip to backside-->
             <div class="card" id="card2" style="width: 20rem; height: 25rem;">
                <div id="card2font">
                 <img src="../optionspic/1_92vGicRHnNa6JHLGGiIb_A.jpeg" style="height:240px;" class="card-img-top" alt="...">
@@ -292,6 +337,7 @@
             </div>
 
         <div class="catt offset-sm-2 offset-md-0 col-sm-8 col-md-6  col-lg-4 col-xl-3" >
+            <!--Card 4 (on hover flip to backside-->
             <div class="card" id='card4' style="width: 20rem; height: 25rem;">
              <div id="card4font">
                 <img src="../optionspic/thumbnail-daaa.jpg" style="height:240px;" class="card-img-top" alt="...">
@@ -317,20 +363,21 @@
 
 </div>
 </div>
-
+<!--Toast,welcome message.-->
         <div class=" position-fixed bottom-0 end-0 p-3" style="z-index: 99;">
 
             <div class="toast" id="welcome" role="alert"  data-bs-autohide="false" aria-live="assertive" aria-atomic="true" >
                 <div class="toast-header">
+                    <!--Header:Profile pic + name +time-->
                     <img src="../profilepic/profile.jpg" style="width:25px;" class="rounded me-2" alt="...">
                     <strong class="mr-auto">ZhuoFan</strong>
 
                     <small>&nbsp; Now &nbsp;&nbsp;&nbsp;&nbsp;</small>
-
+                    <!--Button to dismiss toast-->
                     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">
                     </button>
                 </div>
-
+                <!--Message-->
                 <div class="toast-body">
                     Hello,I am ZhuoFan.<br>Thanks for visiting this site.<br>Hope that you can find what you need.<br>Have a nice day!! :)
                 </div>

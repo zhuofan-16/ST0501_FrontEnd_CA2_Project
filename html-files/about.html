@@ -91,24 +91,6 @@
         </div>
     </div>
 </div>
-<script>
-    function searchfeature(){
-        var tables=document.getElementById("searchtable");
-        var input=document.getElementById("sbar").value.toUpperCase();
-        var li=tables.getElementsByTagName("tr");
-        for (var l=0;l<li.length;l++){
-            if (li[l].textContent.toUpperCase().indexOf(input)===0){
-                li[l].style.display="";
-                tables.style.display=""
-            }else{
-                li[l].style.display="none";
-
-            }
-            if (input===""){
-                tables.style.display="none"
-            }
-        }}
-</script>
 <div class="container-fluid margintop grey">
     <div class="container">
         <div class="row text-center d-flex justify-content-center align-item-center textfly">
@@ -123,7 +105,8 @@
                 <p>Welcome to about me page ,know more about me ! :)</p>
                 <img  onclick="window.location.href='about.html#aboutmeover'" src="../svg/arrow-down-square.svg" alt="arrow" style="height:50px;cursor:pointer;">
             </div>
-            <script>    var currenttime=new Date();
+            <script>
+                var currenttime=new Date();
             var currenthour=currenttime.getHours();
             var day=document.getElementById("photocontainer");
             if (currenthour>=18){
@@ -171,36 +154,6 @@
         </div>
     </div>
 </div>
-<script>
-    
-    var r = 0;
-    var txt = "About Me";
-    var speed = 300;
-
-    function typeWriter() {
-        var endtype= setInterval(function(){
-
-            if (r < txt.length) {
-                document.getElementById("type").innerHTML += txt.charAt(r);
-                r++;
-            }
-        },300);
-        endtype();
-        clearTimeout(endtype);
-    }
-
-    document.addEventListener('scroll',function(e){
-        if (window.pageYOffset+window.innerHeight >document.querySelector("#aboutmeover>div").offsetTop){
-
-            typeWriter();
-        }
-        else{
-            removetype();
-        }
-
-
-    })
-</script>
 <div class="container-fluid margintop grey" id="quotesection">
     <div class="container">
         <div class="row">

@@ -108,29 +108,7 @@
         </div>
     </div>
 </div>
-<!--Search function script-->
-<script>
-    /*Logic:At default,the list is hidden .create a function that use indexOf to check for matching ,if matching it will be ===0,
-    options matching will be list out by enable the display:css style .Else if not match, display:css style will be changed to none(ie list will not be
-    shown).If the user did not input anything ,the whole table will be hidden.This function will key running upon detecting that there is a input(onkeyup).
-     */
-    function searchfeature(){
-        var tables=document.getElementById("searchtable");
-        var input=document.getElementById("sbar").value.toUpperCase();
-        var li=tables.getElementsByTagName("tr");
-        for (var l=0;l<li.length;l++){
-            if (li[l].textContent.toUpperCase().indexOf(input)===0){/* Check for matching*/
-                li[l].style.display="";
-                tables.style.display=""
-            }else{
-                li[l].style.display="none";/*If not found,hide*/
 
-            }
-            if (input===""){
-                tables.style.display="none"/*If user did not enter anything ,hide*/
-            }
-        }}
-</script>
 <!--This is the cover of page-->
 <!--Slideshow element-->
 <div class="container-fluid grey margintop textfly1" >
@@ -261,39 +239,7 @@
 
         4 years is really fast, till today I could still remember the summer that we all studied hard in classes, trying to understand everything the teacher said and to put it into practice. I could also remember the nights when everyone was sleeping and we are trying to complete the practice papers that have never seemed to have an end….</p>
         </div>
-        <!-- Script for typing effect for subtitles in First section-->
-<script>
 
-    var r = 0;
-    var txt = "Graduation";
-/*  Logic: Create a function that launches a timer that print letter by letter every 300ms .
-Then create a monitor ,when user scroll to a section section,the function will be called
- */
-    function typeWriter() {
-
-        var endtype= setInterval(function(){
-
-            if (r < txt.length) {
-                document.getElementById("type").innerHTML += txt.charAt(r);
-                r++;
-            }
-        },300);
-        endtype();
-        clearTimeout(endtype);
-    }
-
-    document.addEventListener('scroll',function(e){
-        if (window.pageYOffset+window.innerHeight >document.querySelector("#secreflection>div").offsetTop){
-
-            typeWriter();
-        }
-        else{
-            removetype();
-        }
-
-
-    })
-</script>
         <!--Corresponding images another half in First section-->
         <div class=" col-md-6 col-sm-12 text-end">
 <img src="../secondaryschoolphoto/kissclipart-graduation-vector-png-clipart-square-academic-cap-cb399ded5d6237b4.png" style="height: 300px;">

@@ -91,24 +91,6 @@
         </div>
     </div>
 </div>
-<script>
-    function searchfeature(){
-        var tables=document.getElementById("searchtable");
-        var input=document.getElementById("sbar").value.toUpperCase();
-        var li=tables.getElementsByTagName("tr");
-        for (var l=0;l<li.length;l++){
-            if (li[l].textContent.toUpperCase().indexOf(input)===0){
-                li[l].style.display="";
-                tables.style.display=""
-            }else{
-                li[l].style.display="none";
-
-            }
-            if (input===""){
-                tables.style.display="none"
-            }
-        }}
-</script>
 <div class="container-fluid grey margintop">
     <div class="container">
         <div class="row textfly">

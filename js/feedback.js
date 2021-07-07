@@ -1,3 +1,25 @@
+/*Logic:At default,the list is hidden .create a function that use indexOf to check for matching ,if matching it will be ===0,
+options matching will be list out by enable the display:css style .Else if not match, display:css style will be changed to none(ie list will not be
+shown).If the user did not input anything ,the whole table will be hidden.This function will key running upon detecting that there is a input(onkeyup).
+*/
+function searchfeature(){
+    var tables=document.getElementById("searchtable");
+    var input=document.getElementById("sbar").value.toUpperCase();
+    var li=tables.getElementsByTagName("tr");
+    for (var l=0;l<li.length;l++){
+        if (li[l].textContent.toUpperCase().indexOf(input)===0){
+            li[l].style.display="";
+            tables.style.display=""
+        }else{
+            li[l].style.display="none";/*If not found,hide*/
+
+        }
+        if (input===""){
+            tables.style.display="none"/*If user did not enter anything ,hide*/
+        }
+    }}
+
+
 window.onload=function() {
     var searchbar = document.getElementById("searchbar")
     var searchkey = document.getElementById("search");

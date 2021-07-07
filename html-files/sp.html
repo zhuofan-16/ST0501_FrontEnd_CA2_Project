@@ -90,24 +90,6 @@
         </div>
     </div>
 </div>
-<script>
-    function searchfeature(){
-        var tables=document.getElementById("searchtable");
-        var input=document.getElementById("sbar").value.toUpperCase();
-        var li=tables.getElementsByTagName("tr");
-        for (var l=0;l<li.length;l++){
-            if (li[l].textContent.toUpperCase().indexOf(input)===0){
-                li[l].style.display="";
-                tables.style.display=""
-            }else{
-                li[l].style.display="none";
-
-            }
-            if (input===""){
-                tables.style.display="none"
-            }
-        }}
-</script>
 <div class="container-fluid margintop grey">
     <div class="container">
         <div class="row text-center textfly">
@@ -129,35 +111,6 @@
         <div class="col-md-6 col-sm-12">
             <h1>First <span style="color:royalblue" class="typing" id="type" ></span><span style="color:royalblue" class="cursor">|</span> </h1>
             <p>It has been 11 days since school started. When I first walked into SP on 14 April 2021 for a freshman orientation program, I was actually kind of excited to meet new people and see new things. My first impression of SP is that it is really big. There are many buildings in SP which some are pretty cool. They are built in different styles. When I was like trying to find my way to T22 that day, I spend like 20 minutes trying to find and walk there. There are so many stairs and turns which is kind of confusing. Luckily, after walking a few times, at least now I can find my way to T22, T21, T19, and FC6.My first impression towards my personal tutor and classmate are quite good as I felt that they are quite welcoming and nice.We bonded well together during the orientation programme despite it being quite short. </p>
-            <script>
-
-                var r = 0;
-                var txt = "Impression";
-                var speed = 300;
-
-                function typeWriter() {
-                    var endtype= setInterval(function(){
-
-                        if (r < txt.length) {
-                            document.getElementById("type").innerHTML += txt.charAt(r);
-                            r++;
-                        }
-                    },300);
-
-                }
-
-                document.addEventListener('scroll',function(e){
-                    if (window.pageYOffset+window.innerHeight >document.querySelector("#spsection>div").offsetTop){
-
-                        typeWriter();
-                    }
-                    else{
-                        removetype();
-                    }
-
-
-                })
-            </script>
         </div>
         <div class="col-md-6 col-sm-12 text-end justify-content-end d-flex align-item-end">
             <div id="carouselExampleSlidesOnly"  style='width:500px;height:400px;box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;' class=" carousel slide carousel-fade" data-bs-ride="carousel">

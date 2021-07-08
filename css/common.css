@@ -158,6 +158,9 @@ html{
 .githubimg{
     height:240px;
 }
+.cardimg1{
+    height:240px;
+}
 .springgreen{
     color:springgreen;
 }
@@ -225,4 +228,10 @@ html{
 }
 .height400{
  height:400px;
+}
+.orange{
+    color:orange;
+}
+.red{
+    color:red;
 }

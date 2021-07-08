@@ -107,4 +107,75 @@ html{
     text-decoration: none;
     color:black;
 }
+.profilepicsizing{
+    height:30px;
+}
+.searchbarcss{
+    position:relative;
+    top:30%;
+    :500px;
+    height:60px;
+    outline:none;
+    font-size: 40px;
+    border:1px solid grey;
+    border-radius:5px;
+}
+.arrowdown{
+    height:50px;
+    cursor:pointer;
+    filter:invert(100%);
+}
+.typingcolor{
+    color:royalblue;
+}
+.forestgren{
+    color:forestgreen;
+}
+.carouselsetting{
+    width:807px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.redcolor{
+    color:red;
 
+}
+.slategry{
+  color:slategray;
+}
+.cardsstyle{
+    width: 20rem;
+    height: 25rem;
+}
+.cardimagestyle{
+    height:50px;
+}
+.yellowcolor{
+    color:#feb236;
+}
+.darkcyn{
+    color:darkcyan;
+}
+.githubimg{
+    height:240px;
+}
+.springgreen{
+    color:springgreen;
+}
+.cornflowerblue{
+    color:cornflowerblue;
+}
+.purplecolor{
+    color:#6b5b95;
+}
+.pinkred{
+    color:#c94c4c;
+}
+.golden{
+    color:goldenrod;
+}
+.zindex99{
+    z-index: 99;
+}
+.toastprofile{
+    width:25px;
+}

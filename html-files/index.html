@@ -33,7 +33,7 @@
         <!--Remove the 20% gaps for navigation bar on page-->
         <div class="container-fluid">
             <!-- Let profile picture to appear with page title-->
-            <a class="navbar-brand" href="#"><img src="../profilepic/profile.jpg" class="d-inline-block align-text-top rounded me-2" style="height:30px;"  alt="ZhuoFan">ZhuoFan | Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class="navbar-brand" href="#"><img src="../profilepic/profile.jpg" class="d-inline-block align-text-top rounded me-2 profilepicsizing" alt="ZhuoFan">ZhuoFan | Home&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -73,7 +73,7 @@
     <div class="row ">
         <div class="col-12 ">
             <!--On typing ,search matching-->
-        <input type="text" id="sbar" onkeyup="searchfeature()" class="form-control" style="position:relative;top:30%;:500px;height:60px;outline:none;font-size: 40px;border:1px solid grey;border-radius:5px;" placeholder="Search..">
+        <input type="text" id="sbar" onkeyup="searchfeature()" class="form-control searchbarcss"  placeholder="Search..">
        <br>
             <!--Display search result in table-->
             <div class="col-12 " style="position:relative;top:30%;">
@@ -118,7 +118,7 @@
     <h1 id="enlarge">CHEN ZHUOFAN</h1> <br> <br>
     <h3>My Experience in Poly and My Career Prospect</h3><br><br>
     <!--Upon clicked ,slide to the first section-->
-    <img  onclick="window.location.href='index.html#aboutmesum';"  src="../svg/arrow-down-square.svg" alt="arrow" style="height:50px;cursor:pointer;filter:invert(100%);">
+    <img onclick="window.location.href='index.html#aboutmesum';"  src="../svg/arrow-down-square.svg" alt="arrow" class="arrowdown">
 </div>
 
 <!--First section in Page-->
@@ -126,7 +126,7 @@
     <div class="row align-items-center about">
         <!--For medium screen size and about ,2 element on same line .For small screen size (ie.phone),1 element per line-->
         <div class="col-md-6 col-sm-12" >
-            <h1 class="header">Something <span id='type'  style='color:royalblue;'></span><span class="cursor" style='color:royalblue'>|</span></h1>
+            <h1 class="header">Something <span id='type' class="typingcolor" ></span><span class="cursor typingcolor">|</span></h1>
             <br>
 
             <p>I am 17 years old this year.<br>Currently a student studying in Singapore Polytechnic.<br>I love to play badminton and do coding </p>
@@ -156,14 +156,14 @@
     <div class="row">
         <!--text of section at center and occupy full line-->
        <div class="col-12 text-center">
-       <h1><span style="color:forestgreen"> Secondary School</span> Life</h1>
+       <h1><span class="forestgren"> Secondary School</span> Life</h1>
 <p>I was a student of Dunearn Secondary School from 2017 to 2020. <br>I have enjoyed myself in these 4 years of secondary school life. In these 4 years, I have experienced a lot of things, some are bad, some are good, but all of these have allowed me to mature into the person I am today --one perceptive to the needs of others and one who dares to lead with passion and purpose. I am thankful to all my teachers and friends that have walked with me through this 4-year journey.</p>
       <br>
            <br>
        </div>
 <!--Unconfirmed div ,may consider changing in later date-->
            <div class=" offset-1 col-11 container text-center d-flex justify-content-center">
-               <div id="carouselExampleCaptions" class="carousel slide carousel-fade" style="width:800px;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;" data-bs-ride="carousel">
+               <div id="carouselExampleCaptions" class="carousel slide carousel-fade carouselsetting"  data-bs-ride="carousel">
                    <!--Number of indicator-->
                    <div class="carousel-indicators">
                        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -275,7 +275,7 @@
         </div>
         <!--Text at left occupying right of the line for medium size screen,and full line for small screen-->
         <div class="col-lg-6 col-sm-12 text-end">
-            <h1><span style="color:red">Singapore Polytechnic</span> Experience</h1>
+            <h1><span class="redcolor">Singapore Polytechnic</span> Experience</h1>
 <p>I am a AY2021 Student currently studying in Singapore Polytechnic.<br>In the course of Diploma in Applied AI and Analytics.School have started for around 5 month.<br>Find out more about my experience here! </p>
         </div>
 
@@ -286,14 +286,14 @@
 <!--Start of forth section-->
 <div class="container-fluid margintop grey ">
 <div class="  container ">
-    <h1>More <span style="color:slategray">Options</span></h1>
+    <h1>More <span class="slategry">Options</span></h1>
     <br><br>
 
     <div class=" row">
 <!--4 spinning card element ,appear all 4 in extralarge screen,2 in medium ,1 in small screen-->
     <div class="catt offset-sm-2 offset-md-0 col-lg-4 col-md-6 col-sm-8 col-xl-3">
  <!--Card 1 (on hover flip to backside-->
-    <div class="card" id='card1' style="width: 20rem; height: 25rem;">
+    <div class="card" id='card1' style="width:20rem;height:25rem;" >
       <div id="card1font">
         <img src="../optionspic/education-2.jpg" class="card-img-top" alt="...">
         <div class="card-body">
@@ -303,8 +303,8 @@
         <div id="card1backside">
             <div class="container row aligncard">
                 <div class="text-center">
-                    <img src="../cardicons/graduation_cap.svg" style="height:50px;">
-                    <p><strong>I am a student of <span style="color: #feb236"> Dunearn Secondary School</span> from 2017 to 2020 and currently a student of <span style="color:darkcyan">Singapore Polytechnic</span>. Know more about my experience.</strong></p>
+                    <img src="../cardicons/graduation_cap.svg" class="cardimagestyle">
+                    <p><strong>I am a student of <span class="yellowcolor"> Dunearn Secondary School</span> from 2017 to 2020 and currently a student of <span class="darkcyn">Singapore Polytechnic</span>. Know more about my experience.</strong></p>
                     <div class="col text-center">
                         <button type="button" class="btn btn-warning" onclick="window.location.href='secondary.html'">Dunearn Secondary</button>
                        <br><br>
@@ -317,9 +317,9 @@
         </div>
         <div class="catt offset-sm-2 offset-md-0 col-sm-8 col-md-6  col-lg-4 col-xl-3" >
             <!--Card 2 (on hover flip to backside-->
-            <div class="card" id="card3" style="width: 20rem; height: 25rem;">
+            <div class="card " id="card3" style="width:20rem;height:25rem;">
           <div id="card3font">
-            <img src="../optionspic/f46577af-22d1-4883-a.png" style="height:240px;" class="card-img-top" alt="...">
+            <img src="../optionspic/f46577af-22d1-4883-a.png"  class="card-img-top githubimg" alt="...">
             <div class="card-body">
                 <h3 class="card-title">My Github</h3>
             </div>
@@ -327,8 +327,8 @@
             <div id="card3backside" >
                 <div  class="container row aligncard ">
     <div class="text-center">
-    <img src='../cardicons/command_line.svg' style="height:50px;">
-    <p><strong>I have use Github for couples of years.Mostly involved in <span style="color:springgreen">Android development</span> and <br> <span style="color:cornflowerblue"> C Language </span> projects.Take a look at some of my projects.</strong></p>
+    <img src='../cardicons/command_line.svg' class="cardimagestyle">
+    <p><strong>I have use Github for couples of years.Mostly involved in <span class="springgreen">Android development</span> and <br> <span class="cornflowerblue"> C Language </span> projects.Take a look at some of my projects.</strong></p>
     </div>
                <div class="col text-center">
                 <button type="button" onclick="window.location.href='https://www.github.com/zhuofan-16';" class="btn btn-primary " >Go to Github</button></div>
@@ -338,10 +338,10 @@
             </div>
 
         <div class="catt offset-sm-2 offset-md-0 col-sm-8 col-md-6  col-lg-4 col-xl-3" >
-            <!--Card 3 (on hover flip to backside-->
-            <div class="card" id="card2" style="width: 20rem; height: 25rem;">
+            <!--Card 3 (on hover flip to backside)-->
+            <div class="card" id="card2" style="width:20rem;height:25rem;">
                <div id="card2font">
-                <img src="../optionspic/1_92vGicRHnNa6JHLGGiIb_A.jpeg" style="height:240px;" class="card-img-top" alt="...">
+                <img src="../optionspic/1_92vGicRHnNa6JHLGGiIb_A.jpeg" class="card-img-top githubimg" alt="...">
                 <div class="card-body">
                     <h3 class="card-title">Achievements</h3>
                 </div>
@@ -349,8 +349,8 @@
                 <div id="card2backside">
                     <div class="container row aligncard">
                         <div class="text-center">
-                            <img src="../cardicons/diploma_2.svg" style="height:50px;">
-                            <p><strong>From 2017 to present,I have participated in a lot of Mathematics and Science competition like <span style="color:#6b5b95">Australia Big Science Competition</span> and <br> <span style="color:#c94c4c">ICAS Mathematics Competition</span>.View more of my achievements here!</strong></p>
+                            <img src="../cardicons/diploma_2.svg" class="cardimagestyle">
+                            <p><strong>From 2017 to present,I have participated in a lot of Mathematics and Science competition like <span class="purplecolor">Australia Big Science Competition</span> and <br> <span class="pinkred">ICAS Mathematics Competition</span>.View more of my achievements here!</strong></p>
                         </div>
                         <div class="col text-center">
                             <button type="button" class="btn btn-danger" onclick="window.location.href='about.html#achievement';">View Achievements</button>
@@ -364,9 +364,9 @@
 
         <div class="catt offset-sm-2 offset-md-0 col-sm-8 col-md-6  col-lg-4 col-xl-3" >
             <!--Card 4 (on hover flip to backside-->
-            <div class="card" id='card4' style="width: 20rem; height: 25rem;">
+            <div class="card" id='card4' style="width:20rem;height:25rem;">
              <div id="card4font">
-                <img src="../optionspic/thumbnail-daaa.jpg" style="height:240px;" class="card-img-top" alt="...">
+                <img src="../optionspic/thumbnail-daaa.jpg"  class="card-img-top githubimg" alt="...">
                 <div class="card-body">
                     <h3 class="card-title">My Course</h3>
                 </div>
@@ -374,8 +374,8 @@
                 <div id="card4backside">
                 <div class="container row aligncard">
                     <div class="text-center">
-                        <img src="../cardicons/document.svg" style="height:50px;">
-                        <p><strong>I am a AY2021 student in the course of <span style="color:goldenrod">Diploma in Applied AI and Analytics</span>. School have started for a few months.Learn more about how my course is like.</strong></p>
+                        <img src="../cardicons/document.svg" class="cardimagestyle">
+                        <p><strong>I am a AY2021 student in the course of <span class="golden">Diploma in Applied AI and Analytics</span>. School have started for a few months.Learn more about how my course is like.</strong></p>
 
                     </div>
                     <div class="col text-center">
@@ -390,12 +390,12 @@
 </div>
 </div>
 <!--Toast,welcome message.-->
-        <div class=" position-fixed bottom-0 end-0 p-3" style="z-index: 99;">
+        <div class=" position-fixed bottom-0 end-0 p-3 zindex99">
 
             <div class="toast" id="welcome" role="alert"  data-bs-autohide="false" aria-live="assertive" aria-atomic="true" >
                 <div class="toast-header">
                     <!--Header:Profile pic + name +time-->
-                    <img src="../profilepic/profile.jpg" style="width:25px;" class="rounded me-2" alt="...">
+                    <img src="../profilepic/profile.jpg"  class="rounded me-2 toastprofile" alt="...">
                     <strong class="mr-auto">ZhuoFan</strong>
 
                     <small>&nbsp; Now &nbsp;&nbsp;&nbsp;&nbsp;</small>

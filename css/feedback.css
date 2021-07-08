@@ -58,3 +58,9 @@ width:100%;
 #btnmodel:hover{
     background-color:royalblue;
 }
+.feedbackwall{
+    width:696px;height:500px;background:url('../feedback/-5cccef97adb33ba1.jpg');overflow: scroll;
+}
+.maxwidth{
+    max-width: 18rem;
+}

@@ -20,7 +20,7 @@
 <header>
     <nav id='nav' class="navbar py-4 navbar-expand-md navbar-light fixed-top bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="../profilepic/profile.jpg" class="d-inline-block align-text-top rounded me-2" style="height:30px;"  alt="ZhuoFan">ZhuoFan | Feedback&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+            <a class="navbar-brand" href="#"><img src="../profilepic/profile.jpg" class="d-inline-block align-text-top rounded me-2 profilepicsizing"   alt="ZhuoFan">ZhuoFan | Feedback&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -57,7 +57,7 @@
     <div class="row ">
         <div class="col-12 ">
 
-            <input type="text" id="sbar" onkeyup="searchfeature()" class="form-control" style="position:relative;top:30%;:500px;height:60px;outline:none;font-size: 40px;border:1px solid grey;border-radius:5px;" placeholder="Search..">
+            <input type="text" id="sbar" onkeyup="searchfeature()" class="form-control searchbarcss"  placeholder="Search..">
             <br>
             <div class="col-12 " style="position:relative;top:30%;">
                 <table class="table table-light" id="searchtable" style="border-collapse: separate;display:none;">
@@ -95,12 +95,12 @@
     <div class="container">
         <div class="row textfly">
             <div class="col-12">
-                <div class="container" id="feedbackwall" style="width:696px;height:500px;background:url('../feedback/-5cccef97adb33ba1.jpg');overflow: scroll;">
+                <div class="container feedbackwall" id="feedbackwall">
                    <br>
                     <div class="row row-cols-3 row-cols-md-3 " id="tr">
                         <div class="col">
-                            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
-                                <div class="card-header"><img src="../profilepic/profile.jpg" style="height:30px;" class="rounded me-2" alt="ZhuoFan">ZhuoFan</div>
+                            <div class="card text-dark bg-light mb-3 maxwidth" >
+                                <div class="card-header"><img src="../profilepic/profile.jpg"  class="rounded me-2 profilepicsizing" alt="ZhuoFan">ZhuoFan</div>
                                 <div class="card-body">
                                     <p class="card-text">Excellent Website,I am so impressed by the design and layout of it.</p>
                                 </div>
@@ -110,9 +110,9 @@
                             </div>
                         </div>
                         <div class="col">
-                            <div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
+                            <div class="card text-dark bg-light mb-3 maxwidth" >
 
-                                <div class="card-header">   <img src="../feedback/1b935eaf194bb173.jpg" style="height:30px;"  class="rounded me-2" alt="JiaCheng">Jia Cheng</div>
+                                <div class="card-header">   <img src="../feedback/1b935eaf194bb173.jpg"   class="rounded me-2 profilepicsizing" alt="JiaCheng">Jia Cheng</div>
                                 <div class="card-body">
 
                                     <p class="card-text">This is the first website that have extremely amazed me,I never visit such a nice one</p>
@@ -130,7 +130,7 @@
                     <br><br>
                     <h1>Feedback Wall</h1>
                     <p>All feedback written will be shown at the wall above<br>Write your first feedback today!!</p>
-                    <img  onclick="window.location.href='feedback.html#feedbackform'" src="../svg/arrow-down-square.svg" alt="arrow" style="height:50px;cursor:pointer;">
+                    <img  onclick="window.location.href='feedback.html#feedbackform'" src="../svg/arrow-down-square.svg" alt="arrow" class="square">
                 </div>
             </div>
             </div>
@@ -141,7 +141,7 @@
 <div class="container margintop" id="feedbackform">
     <div class="row">
 <div class="col-12 text-center">
-    <h1><span style="color:royalblue">Enquiry</span> and <span style="color:mediumseagreen">Feedback</span></h1>
+    <h1><span class="royalblue">Enquiry</span> and <span class="mediumgreen">Feedback</span></h1>
 <p>Your feedback is important to us.Please let us know if you have any feedback :).
 
 </p>
@@ -475,15 +475,15 @@
             </form>
         </div>
         <div class="col-sm-12 col-lg-6 text-end  ">
-            <img src="../feedback/kisspng-computer-icons-organization-exam-5ac9151ea24409.1751555515231275826647.png" style="height: 400px;">
+            <img src="../feedback/kisspng-computer-icons-organization-exam-5ac9151ea24409.1751555515231275826647.png" class="height400">
         </div>
     </div>
 </div>
-<div class=" position-fixed bottom-0 end-0 p-3" style="z-index: 99;">
+<div class=" position-fixed bottom-0 end-0 p-3 zindex99" >
 <div class="toast-container">
     <div class="toast" id="sucessfd" role="alert"  data-bs-autohide="false" aria-live="assertive" aria-atomic="true" >
         <div class="toast-header">
-            <img src="../profilepic/profile.jpg" style="width:25px;" class="rounded me-2" alt="...">
+            <img src="../profilepic/profile.jpg"  class="rounded me-2 toastprofile" alt="...">
             <strong class="mr-auto">ZhuoFan</strong>
 
             <small>&nbsp; Now &nbsp;&nbsp;&nbsp;&nbsp;</small>
@@ -501,7 +501,7 @@
 
     <div class="toast" id="welcome" role="alert"  data-bs-autohide="false" aria-live="assertive" aria-atomic="true" >
         <div class="toast-header">
-            <img src="../profilepic/profile.jpg" style="width:25px;" class="rounded me-2" alt="...">
+            <img src="../profilepic/profile.jpg"  class="rounded me-2 toastprofile" alt="...">
             <strong class="mr-auto">ZhuoFan</strong>
 
             <small>&nbsp; Now &nbsp;&nbsp;&nbsp;&nbsp;</small>

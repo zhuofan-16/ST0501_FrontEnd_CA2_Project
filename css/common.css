@@ -179,3 +179,45 @@ html{
 .toastprofile{
     width:25px;
 }
+.testimonial{
+    height:50%;
+}
+.slateblue{
+    color:slateblue;
+}
+.brown{
+    color:brown;
+}
+.darkcyan{
+    color:darkcyan;
+}
+.fontsize12{
+    font-size:12px;
+}
+.fontsize14{
+    font-size:14px;
+}
+.orangered{
+    color:orangered;
+}
+.photoeffectabout{
+    height:500px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.royalblue{
+    color:royalblue;
+}
+.searchfeature{
+    position:relative;top:30%;
+}
+.searchtable{
+    border-collapse: separate;display:none;
+}
+.square{
+    height:50px;cursor:pointer;
+
+}
+.contactbox{
+    border:0;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+

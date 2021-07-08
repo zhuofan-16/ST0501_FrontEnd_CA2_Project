@@ -1,0 +1,11 @@
+•	Create a website of five web pages (include Home page index.html).
+•	Fair use of free stock images/photos (must give attribution on source of images in your comments). 
+•	You are allowed to use content provided by SP (must give attribution on source of images in your comments).
+•	You are not allowed to use content and designs elements from templates or use frameworks like Wordpress, Drupal, Joomla, Wix or any other frameworks.
+•	Make sure your website can be viewed properly using Google Chrome Browser.
+•	Web Graphics file size should not exceed 800KB (per graphic file).
+•	Scripting and Styling should be accessed via external files.
+•	No fatal errors found in validating web pages and CSS styles.
+•	Add comments in all HTML, CSS and Javascripts files.
+•	Organization of files (there should be folders to segregate different types of files eg. html, css, js, graphics files).
+•	Apply proper file naming convention

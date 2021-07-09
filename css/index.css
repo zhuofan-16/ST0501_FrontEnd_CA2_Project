@@ -5,7 +5,7 @@
     justify-content: center;
     left:0;
     margin-top:72px;
-    background:url("../cover/345130BA4005005CD21565A281ABE8CE.jpg");
+    background:url("../cover/skycover.jpg");
     background-size:cover;
     width: 1980px;
     height: 900px;
@@ -45,9 +45,9 @@
     transform: translate3d(30%,0,-100px);
 }
 
-#slide1 { background: url("../aboutmephoto/me1.jpg") }
-#slide2 { background:url("../aboutmephoto/me2.jpg") }
-#slide3 { background: url("../aboutmephoto/me3.jpg")}
+#slide1 { background: url("../aboutmephoto/myphoto1.jpg") }
+#slide2 { background:url("../aboutmephoto/myphoto2.jpg") }
+#slide3 { background: url("../aboutmephoto/myphoto3.jpg")}
 
 
 #card1,#card2,#card3,#card4{
@@ -82,17 +82,17 @@
 }
 .singaporepoly{
     width: 507px;
-    background: url("../spphoto/Webp.net-resizeimage (1).jpg");
+    background: url("../spphoto/sketchofsingaporepolytechnic.jpg");
     height: 380px;
 
 
 }
 .new{
-    background: url("../spphoto/Webp.net-resizeimage.jpg");
+    background: url("../spphoto/paintsingaporepolytechnic.jpg");
     width: 537px;
     height: 400px;
     transition: all 0.8s;
-    transition-delay: 0.5s;
+    transition-delay: 0.2s;
 
 }
 

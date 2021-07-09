@@ -62,7 +62,7 @@
     transform: translate3d(30%,0,-100px);
 }
 
-#slide1 { background: url("../aboutmephoto/me1.jpg") }
-#slide2 { background:url("../aboutmephoto/me2.jpg") }
-#slide3 { background: url("../aboutmephoto/me3.jpg")}
+#slide1 { background: url("../aboutmephoto/myphoto1.jpg") }
+#slide2 { background:url("../aboutmephoto/myphoto2.jpg") }
+#slide3 { background: url("../aboutmephoto/myphoto3.jpg")}
 

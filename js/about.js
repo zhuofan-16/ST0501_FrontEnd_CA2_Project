@@ -134,6 +134,7 @@ window.onload=function() {
             }
         }, 1500)
     })
+
     var option =
         {
             animation: true,

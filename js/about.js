@@ -1,4 +1,13 @@
-
+/*
+MODULE NAME : ST0501 : FRONT-END WEB DEVELOPMENT
+MODULE LECTURER: MR LIM CHIN MIN
+MODULE ASSIGNMENT: CA2 WEBSITE ASSIGNMENT (WITH BOOTSTRAP AND JS)
+Student Name: CHEN ZHUOFAN
+Student No. : P2100746
+Student Class: DAAA/FT/1A/04
+Page:About Me (JS)
+Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
+*/
 
 /*Logic:At default,the list is hidden .create a function that use indexOf to check for matching ,if matching it will be ===0,
 options matching will be list out by enable the display:css style .Else if not match, display:css style will be changed to none(ie list will not be

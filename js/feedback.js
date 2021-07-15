@@ -64,7 +64,7 @@ window.onload=function() {
     toastElement.show();
 
 
-
+/*Guest icon used here is taken from https://icon-library.com/icon/android-contacts-icon-png-20.html*/
     var submit= document.getElementById("submit");
     submit.onclick=function(){
         var name=document.getElementById("fname").value;

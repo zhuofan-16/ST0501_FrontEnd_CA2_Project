@@ -17,7 +17,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
 
 }
 #photocontainer{
-
+/*Images from https://dribbble.com/nanuo ,Recreated by ZhuoFan*/
     background: url("../aboutmephoto/greeting.jpg") center;
     width:696px;
     height:1000px;

@@ -248,3 +248,14 @@ html{
 .rosybrown{
     color:rosybrown;
 }
+.cursorpointer{
+    cursor:pointer;
+
+}
+.tablesearch{
+    position:relative;top:30%;
+
+}
+.tablesetting{
+    border-collapse: separate;
+}

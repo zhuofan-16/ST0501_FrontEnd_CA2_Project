@@ -70,38 +70,40 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
 
             <input type="text" id="sbar" onkeyup="searchfeature()" class="form-control searchbarcss"  placeholder="Search..">
             <br>
-            <div class="col-12 " style="position:relative;top:30%;">
-                <table class="table table-light" id="searchtable" style="border-collapse: separate;display:none;">
-                    <tr><th onclick="window.location.href='about.html'" style="cursor:pointer;" scope="row">About Me</th></tr>
-                    <tr><th onclick="window.location.href='about.html#achievement'" style="cursor:pointer;" scope="row">Achievements and Certification</th></tr>
-                    <tr><th onclick="window.location.href='sp.html#classmatese'" style="cursor:pointer;" scope="row">Classmates</th></tr>
-                    <tr><th onclick="window.location.href='about.html#contactme'" style="cursor:pointer;" scope="row">Contact Me</th></tr>
-                    <tr><th onclick="window.location.href='future.html#daaareflection'" style="cursor:pointer;" scope="row">Diploma Applied AI and Analytics</th></tr>
-                    <tr><th onclick="window.location.href='about.html#education'" style="cursor:pointer;" scope="row">Education Background</th></tr>
-                    <tr><th onclick="window.location.href='future.html#expsp'" style="cursor:pointer;" scope="row">Experience In Course</th></tr>
-                    <tr><th onclick="window.location.href='feedback.html'" style="cursor:pointer;" scope="row">Feedback </th></tr>
-                    <tr><th onclick="window.location.href='feedback.html'" style="cursor:pointer;" scope="row">Feedback Wall</th></tr>
-                    <tr><th onclick="window.location.href='feedback.html#feedbackform'" style="cursor:pointer;" scope="row">Feedback Form</th></tr>
-                    <tr><th onclick="window.location.href='sp.html#spsection1'" style="cursor:pointer;" scope="row">First Impression</th></tr>
-                    <tr><th onclick="window.location.href='sp.html#foodsection'" style="cursor:pointer;" scope="row">Food</th></tr>
-                    <tr><th onclick="window.location.href='future.html'" style="cursor:pointer;" scope="row">Future Prospect</th></tr>
-                    <tr><th onclick="window.location.href='future.html#jobsection'" style="cursor:pointer;" scope="row">Future Job And Opportunities</th></tr>
-                    <tr><th onclick="window.location.href='about.html#quotesection'" style="cursor:pointer;" scope="row">Quote And Inspiration</th></tr>
-                    <tr><th onclick="window.location.href='about.html#testimonial'" style="cursor:pointer;" scope="row">Testimonial</th></tr>
-                    <tr><th onclick="window.location.href='secondary.html'" style="cursor:pointer;" scope="row">Dunearn Secondary School</th></tr>
-                    <tr><th onclick="window.location.href='secondary.html#secreflection'" style="cursor:pointer;" scope="row">Graduation</th></tr>
-                    <tr><th onclick="window.location.href='secondary.html#learnertoday'" style="cursor:pointer;" scope="row">Learner Today,Leader Tomorrow</th></tr>
-                    <tr><th onclick="window.location.href='secondary.html#learnertoday'" style="cursor:pointer;" scope="row">Leadership Development</th></tr>
-                    <tr><th onclick="window.location.href='sp.html#splesson'" style="cursor:pointer;" scope="row">Lessons</th></tr>
-                    <tr><th onclick="window.location.href='secondary.html#lifelong'" style="cursor:pointer;" scope="row">Lifelong Friends</th></tr>
-                    <tr><th onclick="window.location.href='future.html#daaareflection'" style="cursor:pointer;" scope="row">My Course</th></tr>
-                    <tr><th onclick="window.location.href='sp.html'" style="cursor:pointer;" scope="row">Singapore Polytechnic</th></tr>
-                    <tr><th onclick="window.location.href='feedback.html#btnmodel'" style="cursor:pointer;" scope="row">User Agreement </th></tr>
+            <!--Display search result in table-->
+            <div class="col-12 tablesearch" >
+                <table class="table table-light tablesetting" id="searchtable">
+                    <tr><th onclick="window.location.href='about.html'" class="cursorpointer" scope="row">About Me</th></tr>
+                    <tr><th onclick="window.location.href='about.html#achievement'" class="cursorpointer"  scope="row">Achievements and Certification</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#classmatese'" class="cursorpointer"  scope="row">Classmates</th></tr>
+                    <tr><th onclick="window.location.href='about.html#contactme'" class="cursorpointer"  scope="row">Contact Me</th></tr>
+                    <tr><th onclick="window.location.href='future.html#daaareflection'" class="cursorpointer"  scope="row">Diploma Applied AI and Analytics</th></tr>
+                    <tr><th onclick="window.location.href='about.html#education'" class="cursorpointer"  scope="row">Education Background</th></tr>
+                    <tr><th onclick="window.location.href='future.html#expsp'" class="cursorpointer"  scope="row">Experience In Course</th></tr>
+                    <tr><th onclick="window.location.href='feedback.html'" class="cursorpointer"  scope="row">Feedback </th></tr>
+                    <tr><th onclick="window.location.href='feedback.html'" class="cursorpointer"  scope="row">Feedback Wall</th></tr>
+                    <tr><th onclick="window.location.href='feedback.html#feedbackform'" class="cursorpointer"  scope="row">Feedback Form</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#spsection1'" class="cursorpointer"  scope="row">First Impression</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#foodsection'" class="cursorpointer"  scope="row">Food</th></tr>
+                    <tr><th onclick="window.location.href='future.html'" class="cursorpointer"  scope="row">Future Prospect</th></tr>
+                    <tr><th onclick="window.location.href='future.html#jobsection'" class="cursorpointer"  scope="row">Future Job And Opportunities</th></tr>
+                    <tr><th onclick="window.location.href='about.html#quotesection'" class="cursorpointer"  scope="row">Quote And Inspiration</th></tr>
+                    <tr><th onclick="window.location.href='about.html#testimonial'" class="cursorpointer"  scope="row">Testimonial</th></tr>
+                    <tr><th onclick="window.location.href='secondary.html'" class="cursorpointer"  scope="row">Dunearn Secondary School</th></tr>
+                    <tr><th onclick="window.location.href='secondary.html#secreflection'" class="cursorpointer"  scope="row">Graduation</th></tr>
+                    <tr><th onclick="window.location.href='secondary.html#learnertoday'" class="cursorpointer"  scope="row">Learner Today,Leader Tomorrow</th></tr>
+                    <tr><th onclick="window.location.href='secondary.html#learnertoday'" class="cursorpointer"  scope="row">Leadership Development</th></tr>
+                    <tr><th onclick="window.location.href='sp.html#splesson'" class="cursorpointer"  scope="row">Lessons</th></tr>
+                    <tr><th onclick="window.location.href='secondary.html#lifelong'" class="cursorpointer"  scope="row">Lifelong Friends</th></tr>
+                    <tr><th onclick="window.location.href='future.html#daaareflection'" class="cursorpointer"  scope="row">My Course</th></tr>
+                    <tr><th onclick="window.location.href='sp.html'" class="cursorpointer"  scope="row">Singapore Polytechnic</th></tr>
+                    <tr><th onclick="window.location.href='feedback.html#btnmodel'" class="cursorpointer"  scope="row">User Agreement </th></tr>
                 </table>
             </div>
         </div>
     </div>
 </div>
+<script src="../js/searchspecific.js"></script>
 <div class="container-fluid margintop grey">
     <div class="container">
         <div class="row text-center d-flex justify-content-center align-item-center textfly">

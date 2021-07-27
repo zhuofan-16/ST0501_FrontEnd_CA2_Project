@@ -12,30 +12,47 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
 <html lang="en" >
 <head>
     <meta charset="UTF-8">
+    <!-- Sets the width of the page to follow the screen-width of the device and zoom level when loaded-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Define page title to appear on tab-->
     <title> ZhuoFan's SP Life</title>
+    <!--Insert search keywords for search engine-->
     <meta name="keywords" content="ZhuoFan,sp,daaa,卓凡,ChenZhuofan,Chen,ZHUOFAN,CHEN">
+    <!---Set page icon to appear at tab-->
     <link rel="icon" href="../profilepic/profile.jpg"/>
+    <!---Set website description for search engine-->
     <meta name="description"  content="Personal Website | ZhuoFan | I am 17 years old this year.Currently a student studying in Singapore Polytechnic.I love to play badminton and to do coding<br>Click to know more about me:)">
     <meta name="name" content="ZhuoFan">
     <meta name="image" content="profile.jpg">
+    <!---Bootstrap 5 support--->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+    <!--Import common css throughout website-->
     <link href="../css/common.css" rel="stylesheet">
+
+    <!--Import page-specific css-->
     <link href="../css/sp.css" rel="stylesheet">
+    <!--Import page-specific js-->
     <script src="../js/sp.js"></script>
 </head>
+<!--Start of body-->
 <body>
+<!--Start of header-->
 <header>
+    <!--Navigation Bar-->
     <nav id='nav' class="navbar py-4 navbar-expand-md navbar-light fixed-top bg-white">
+        <!--Remove the 20% gaps for navigation bar on page-->
         <div class="container-fluid">
+            <!-- Let profile picture to appear with page title-->
             <a class="navbar-brand" href="#"><img src="../profilepic/profile.jpg" class="d-inline-block align-text-top rounded me-2 profilepicsizing"   alt="Image of ZhuoFan's profile picture">ZhuoFan | SP Life&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!--Div collapse mode for small screen-->
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class=" navbar-nav me-auto mb-2 mb-md-0">
+                    <!-- Navigation Items-->
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
@@ -55,6 +72,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
                         <a class="nav-link" href="feedback.html" >Feedback</a>
                     </li>
                 </ul>
+                <!--Search button-->
                 <form class="d-flex">
                     <!--Search icon taken from https://www.clipartmax.com/middle/m2H7m2K9H7b1G6m2_computer-icons-google-search-clip-art-transprent-%E2%93%92-transparent-background-magnifying-glass/-->
                     <img src="../searchbaricons/search.png" id="search" alt="Image of search"/>
@@ -63,10 +81,13 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
         </div>
     </nav>
 </header>
+<!--End of header-->
+<!--Start of search overlay configuration-->
+<!--Animation for appear of overlay-->
 <div class="container-fluid searchbaranimation" id="searchbar">
     <div class="row ">
         <div class="col-12 ">
-
+            <!--On typing ,search matching-->
             <input type="text" id="sbar" onkeyup="searchfeature()" class="form-control searchbarcss" placeholder="Search..">
             <br>
             <!--Display search result in table-->
@@ -102,11 +123,15 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
         </div>
     </div>
 </div>
+<!--Script for searchbar to hide results by default-->
 <script src="../js/searchspecific.js"></script>
+<!--This is the cover of page-->
+<!--Grey section-->
 <div class="container-fluid margintop grey">
     <div class="container">
         <div class="row text-center textfly">
             <div class="col-12 text-center">
+                <!-- Centered class photo wigth fade effect-->
                 <img alt="Image of DAAA Class Photo" class='greyscale daaacoverphoto' id="daaaimg" src="../spphoto/daaaclassphoto.jpg" >
 
             </div>
@@ -114,18 +139,24 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
                 <br><br>
                 <h1>Singapore Polytechnic Experience</h1>
                 <p>View first impressions and things about Singapore Polytechnic</p>
+               <!--Arrow down to go next section-->
                 <!--Icon from BootStrap https://icons.getbootstrap.com/icons/arrow-down-square/-->
                 <img  onclick="window.location.href='sp.html#spsection1';" src="../arrowdown/arrowdown.svg" alt="Image of arrow down" class="square">
             </div>
         </div>
     </div>
 </div>
+<!--Start of firts section-->
 <div class="container margintop" id="spsection1">
     <div class="row"  id="spsection">
+        <!--Element occupy left half of line and bigger screen ,full line for small screen-->
         <div class="col-md-6 col-sm-12">
+            <!--Cursor typing effect-->
             <h1>First <span  class="typing royalblue" id="type" ></span><span  class="cursor royalblue">|</span> </h1>
             <p>It has been 11 days since school started. When I first walked into SP on 14 April 2021 for a freshman orientation program, I was actually kind of excited to meet new people and see new things. My first impression of SP is that it is really big. There are many buildings in SP which some are pretty cool. They are built in different styles. When I was like trying to find my way to T22 that day, I spend like 20 minutes trying to find and walk there. There are so many stairs and turns which is kind of confusing. Luckily, after walking a few times, at least now I can find my way to T22, T21, T19, and FC6.My first impression towards my personal tutor and classmate are quite good as I felt that they are quite welcoming and nice.We bonded well together during the orientation programme despite it being quite short. </p>
         </div>
+        <!--Element occupy left half of line and bigger screen ,full line for small screen-->
+        <!--A fading carousel switching photo at 1.7s per photo (1700ms) -->
         <div class="col-md-6 col-sm-12 text-end justify-content-end d-flex align-item-end">
             <div id="carouselfade"   class="spcarouselphoto1 carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -143,13 +174,18 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
         </div>
     </div>
 </div>
+<!--End of section 1-->
+<!--Start of section 2-->
 <div class="container-fluid grey margintop" id="classmatese" >
     <div class="container" >
         <div class="row" id="studysection">
+            <!--Icon occupy left half of line for medium screen and larger,full line for  small screen-->
             <div class="col-sm-12 col-md-6">
                 <!-- Icon from https://cdn.iconscout.com/icon/premium/png-512-thumb/study-2280013-1902258.png-->
-<img src="../spphoto/study.svg" id="study"  alt="Image of studying" class="greyscale studysvg">
+<!--Set image heightt to be 300px-->
+                <img src="../spphoto/study.svg" id="study"  alt="Image of studying" class="greyscale studysvg">
             </div>
+            <!--Icon occupy right half of line for medium screen and larger,full line for  small screen-->
 <div class="col-sm-12 col-md-6 text-end">
     <h1><span class="orangered">Classmates</span> And <span class="purplecolor">Classroom</span></h1>
     <p>My class is a comparably small class which only consists of 19 people. They are quite helpful, when I have doubts and questions, they will be able to help/answer me. I do have fun interacting with them. For some of the people in the class, I have already known them previously as we have a small WhatsApp group for DAAA.So like it is quite easy for me to mix with them. I have also made nice friends in class like Gabriel, Justin, David, and Ella. We often hang out together to study or to have lunch.</p>
@@ -158,24 +194,35 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
         </div>
     </div>
 </div>
+<!--End of second section-->
+<!--Start of third section-->
 <div class="container margintop">
     <div class="row" id="splesson">
+        <!--Icon occupy left half of line for medium screen and larger,full line for  small screen-->
 <div class="col-sm-12 col-md-6">
+    <!--Subtitle with some color-->
     <h1><span class="forestgren">Lessons</span> In SP</h1>
     <p>Well, for the lessons, the lessons in SP are very intensive, there are a lot of things about self-directed learning and personal responsibility so time management is important. We need to do extra search-ups after school so that we will have a better understanding of things taught in class. Additionally, the people in my class are all muggers so since the first week of school, I had been staying up till 2 am to do my module work. With CA2, coming in less than a month, the workload has become heavier and more time has to be spent. For poly, it is unlike secondary when your teachers will chase you for your homework if you never do. In SP, everything is on yourself, you need to take the initiative to check on various things and if you are late for an assignment, it is equivalent to 0 marks. However, the teachers I have met are really kind as they answered all the doubts I have in lessons and have tried to help me a lot with the assignments.</p>
 </div>
+        <!--A image occupy right half of line for medium screen and larger,full line for  small screen-->
         <div class="col-sm-12 col-md-6 d-flex justify-content-end align-content-end ">
+           <!--A image of classroom in Singapore Polytechnic-->
             <div  class="singaporepoly" id="singaporepoly" ></div>
         </div>
     </div>
 </div>
+<!-- End of third section-->
+<!--Start of forth section -->
 <div class="container-fluid grey margintop">
     <div class="container" id="foodsection">
         <div class="row">
+            <!-- Occupy left half of line for screen above medium and full line for small screen-->
             <div class="col-sm-12 col-md-6">
+                <!--Image of food-->
                 <!-- Image taken from https://www.google.com/url?sa=i&url=https%3A%2F%2Ficonscout.com%2Ficon%2Ffast-food-1851561&psig=AOvVaw2ALq-TrlopzTEroz0SIhtt&ust=1626397182807000&source=images&cd=vfe&ved=0CAsQjhxqFwoTCPiZn-Xv4_ECFQAAAAAdAAAAABAD-->
 <img src="../spphoto/food.svg"  id="food" alt="Image of Food" class="greyscale foodsvg">
             </div>
+            <!-- Occupy right half of line for screen above medium and full line for small screen-->
 <div class="col-sm-12 col-md-6 text-end">
     <h1><span class="golden">Food</span> In SP</h1>
     <p>For food in SP, the chicken rice and the Taiwanese food in FC4 is the best !! .The food is nice and the price is also affordable. The waffle and the teriyaki ball store in FC6 are the second best. (Personal opinion). But as FC4 is a bit far from T2X, so for convenience wise, I visited FC6 more frequently as it is just below T2X. Till today, I have only managed to visit FC4,5and 6 . Hope that one day can have a chance to visit FC1-3 too HAHA. But overall, I think every food court has something special.</p>
@@ -183,31 +230,39 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
         </div>
     </div>
 </div>
+
+<!-- End of forth section-->
+<!--Start of fifth section-->
 <div class="container margintop">
     <div class="row">
-
+        <!--Conclusion text-->
+        <!-- Occupy left half of line for screen above medium and full line for small screen-->
 <div class="col-sm-12 col-md-6 ">
     <h1>Lastly...<span class="rosybrown" >Conclusion</span></h1>
     <p>Well, SP is really big and I have just only explored a small part of it (sometimes I still get lost) so in the next 3 years of polytechnic life, there is a lot for me to explore. Academics-wise, I will put in 120% in every assignment, hopefully, I can get a 4.0 GPA in the end, continue my studies and eventually achieve my dream.</p>
 </div>
+        <!--Singapore Polytechnic Logo-->
+        <!-- Occupy right half of line for screen above medium and full line for small screen-->
         <div class="col-sm-12 col-md-6 text-end ">
             <img src="../spphoto/singaporepolytechniclogo.png" alt="Image of Singapore Polytechnic logo" class="splogo">
         </div>
     </div>
 </div>
+<!--Toast welcome message-->
 <div class="zindex99 position-fixed bottom-0 end-0 p-3">
 
     <div class="toast" id="welcome" role="alert"  data-bs-autohide="false" aria-live="assertive" aria-atomic="true" >
+        <!--Header:Profile pic + name +time-->
         <div class="toast-header">
             <img src="../profilepic/profile.jpg"  class="rounded me-2 toastprofile" alt="Image of ZhuoFan's profile picture">
             <strong class="mr-auto">ZhuoFan</strong>
 
             <small>&nbsp; Now &nbsp;&nbsp;&nbsp;&nbsp;</small>
-
+            <!--Button to dismiss toast-->
             <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close">
             </button>
         </div>
-
+        <!--Message-->
         <div class="toast-body">
             Hello!I have just joined SP for a few month. Have fun viewing my Singapore Polytechnic experience till today.<br>Have a nice day!! :)
         </div>

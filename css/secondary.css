@@ -8,25 +8,27 @@ Student Class: DAAA/FT/1A/04
 Page:Secondary School Experience (CSS)
 Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
 */
+/*Carousel settings*/
 .carousel{
     height:60%;
 }
+/*Fade in animation used for cover page */
 .textfly1{
     animation: cover 2s , 3s alternate ;/*Add animation */
 }
 
-
+/*Settings the clickable for 3D slideshows*/
 [type=radio] {
     display: none;
 }
-
+/*Enable 3D perspective */
 #slider {
     height: 500px;
     width:480px;
     perspective: 1000px;
     transform-style: preserve-3d;
 }
-
+/*Visible click area for switching */
 #slider label {
     margin: auto;
     width: 60%;
@@ -34,9 +36,10 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
     border-radius: 4px;
     position: absolute;
     left: 0; right: 0;
-    cursor: pointer;
+    cursor: pointer;/*Allow click like effect when hover*/
     transition: transform 0.4s ease;
 }
+/*Settings for 3D slideshow,upon click ,using transform to move next position*/
 #s1:checked ~ #slide2,#s2:checked ~ #slide3,#s3:checked~#slide1{
     box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
     transform: translate3d(-30%,0,-100px);
@@ -49,19 +52,23 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
     box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
     transform: translate3d(30%,0,-100px);
 }
-
+/*Images for the 3D slideshows*/
 #slide1 { background: url("../secondaryschoolphoto/friendscarousel/friendsphoto1.jpg") }
 #slide2 { background:url("../secondaryschoolphoto/friendscarousel/friendsphoto2.jpg") }
 #slide3 { background: url("../secondaryschoolphoto/friendscarousel/friendsphoto3.jpg")}
+/*Shadow and width for pictures at the carousel of the cover page */
 .slidecarousell{
     width:804px;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+/*height for individual pictures at the carousel of the cover page */
 .carouselphotosize{
     height:500px;
 }
+/*Size of dunearn secondary school logo at conclusion*/
 .dunearnlogo{
     height:300px;
 }
+/*Size of academic cap photo at first section:Words after graduation*/
 .academiccap{
     height:300px;
 }

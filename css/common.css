@@ -259,3 +259,12 @@ html{
 .tablesetting{
     border-collapse: separate;
 }
+.photocarousel{
+    height:500px;
+}
+.modalbody{
+    width:100%;height:500px;
+}
+.cardsize{
+    width:400px;
+}

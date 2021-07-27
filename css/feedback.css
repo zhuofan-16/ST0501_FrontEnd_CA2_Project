@@ -8,25 +8,30 @@ Student Class: DAAA/FT/1A/04
 Page:Feedback (CSS)
 Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
 */
+/*Hide the scroll bar for feedback wall */
 #feedbackwall::-webkit-scrollbar {
     display: none;  /* Safari and Chrome */
 }
+/*Shadow for feedback wall element*/
 #feedbackwall{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;"
 }
+/* Common properties of some form*/
 .commonform{
 width:100%;
-    outline: none;
-    border:none;
+    outline: none;/* Remove the outline during selection*/
+    border:none;/*No border execpt the bottom border*/
     border-bottom:1px solid black;
 }
+/*Uncommon Form : Selection of Mr/Mrs/Dr/ETC*/
 .notcommonform{
-    width:20%;
+    width:20%;/*Width only 20%*/
     outline: none;
     border:none;
     border-bottom:1px solid black;
     background: none;
 }
+/* For all other Uncommon Form :*/
 .notcommonform2{
     width:100%;
     outline: none;
@@ -34,29 +39,33 @@ width:100%;
     border-bottom:1px solid black;
     background: none;
 }
+/*Properties for last name box*/
 #last{
     width:79%;
 }
+/*Properties for comment text box*/
 #comment{
     width:100%;
-    border:1px solid black;
+    border:1px solid black;/*Different from other form,for this ,it is full border*/
 
 }
+/*Properties for submit button*/
 #submit{
-    background-color:mediumspringgreen;
-    border:none;
+    background-color:mediumspringgreen;/*Set color green*/
+    border:none;/*No border*/
     font-size:20px;
     width:30%;
     height:3rem;
     border-radius: 30px;
-
-    font-weight:500;
+    font-weight:500;/*Font thickness*/
 }
+/*On hover ,change color to yellowish-green*/
 #submit:hover{
     background-color:#e0e699;
 }
+/*Term of condition button*/
 #btnmodel{
-    background-color:cornflowerblue;
+    background-color:cornflowerblue;/*Blue Background for button*/
     border:none;
     font-size:20px;
     width:30%;
@@ -65,14 +74,16 @@ width:100%;
     border-radius: 30px;
     font-weight:500;
 }
+/*On hover turn royalblue*/
 #btnmodel:hover{
     background-color:royalblue;
 }
+/*Feedback wall setting*/
 .feedbackwall{
     width:696px;
     height:500px;
     background:url('../feedback/feedbackwallbackground.jpg');
-    overflow: scroll;
+    overflow: scroll; /*Set to scroll so that feedback can be view with scrolling in picture*/
 }
 .maxwidth{
     max-width: 18rem;

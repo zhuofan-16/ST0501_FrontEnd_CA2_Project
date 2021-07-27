@@ -40,6 +40,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
 <body>
 <!--Start of header-->
 <header>
+    <!--Navigation Bar-->
     <nav id='nav' class="navbar py-4 navbar-expand-md navbar-light fixed-top bg-white">
         <!--Remove the 20% gaps for navigation bar on page-->
         <div class="container-fluid">
@@ -48,6 +49,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+            <!--Div collapse mode for small screen-->
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <ul class=" navbar-nav me-auto mb-2 mb-md-0">
                     <!-- Navigation Items-->
@@ -121,6 +123,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
         </div>
     </div>
 </div>
+<!--Script for searchbar to hide results by default-->
 <script src="../js/searchspecific.js"></script>
 <!--This is the cover of page-->
 <!-- class mainvideo is the background image -->
@@ -141,6 +144,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
     <div class="row align-items-center about">
         <!--For medium screen size and about ,2 element on same line .For small screen size (ie.phone),1 element per line-->
         <div class="col-md-6 col-sm-12" >
+            <!--Subtitles with typing effect-->
             <h1 class="header">Something <span id='type' class="typingcolor" ></span><span class="cursor typingcolor">|</span></h1>
             <br>
 
@@ -194,29 +198,29 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
                        <button type="button" data-bs-target="#Captions" data-bs-slide-to="9" aria-label="Slide 10"></button>
                        <button type="button" data-bs-target="#Captions" data-bs-slide-to="10" aria-label="Slide 11"></button>
                    </div>
-                   <!--Captions for different image while slideshow-->
+                   <!--Captions for different image while slideshow--Photo slideshow change every 2 second(2000ms)-->
                    <div class="carousel-inner">
                        <div class="carousel-item active" data-bs-interval="2000">
-                           <img src="../secondaryschoolphoto/presentationcarousel/soop2019.jpg" style="height:500px;" class="d-block w-100" alt="Image of Secondary One Orientation Programme 2019 ">
+                           <img src="../secondaryschoolphoto/presentationcarousel/soop2019.jpg"  class="d-block w-100 photocarousel" alt="Image of Secondary One Orientation Programme 2019 ">
                            <div class="carousel-caption d-none d-md-block">
                                <h5>Secondary One Orientation Programme 2019</h5>
                            </div>
                        </div>
                        <div class="carousel-item" data-bs-interval="2000">
-                           <img src="../secondaryschoolphoto/presentationcarousel/3opalclassphoto.jpg" style="height:500px;"  class="d-block w-100" alt="Image of 3 Opal Racial Harmony Day 2019">
+                           <img src="../secondaryschoolphoto/presentationcarousel/3opalclassphoto.jpg"   class="d-block w-100 photocarousel" alt="Image of 3 Opal Racial Harmony Day 2019">
                            <div class="carousel-caption d-none d-md-block">
                                <h5>3 Opal Racial Harmony Day 2019</h5>
                            </div>
                        </div>
                        <div class="carousel-item" data-bs-interval="2000">
-                           <img src="../secondaryschoolphoto/presentationcarousel/studentcouncilinvestiture.jpg" style="height:500px;"  class="d-block w-100" alt="Image of 15th Student Council Investiture 2019">
+                           <img src="../secondaryschoolphoto/presentationcarousel/studentcouncilinvestiture.jpg"   class="d-block w-100 photocarousel" alt="Image of 15th Student Council Investiture 2019">
                            <div class="carousel-caption d-none d-md-block">
                                <h5>15th Student Council Investiture 2019</h5>
 
                            </div>
                        </div>
                        <div class="carousel-item" data-bs-interval="2000">
-                           <img src="../secondaryschoolphoto/presentationcarousel/studentcouncilinvestiture2.jpg" style="height:500px;"  class="d-block w-100" alt="Image of 15th Student Council Investiture 2019">
+                           <img src="../secondaryschoolphoto/presentationcarousel/studentcouncilinvestiture2.jpg"  class="d-block w-100 photocarousel" alt="Image of 15th Student Council Investiture 2019">
                            <div class="carousel-caption d-none d-md-block">
                                <h5>15th Student Council Investiture 2019</h5>
 
@@ -224,49 +228,50 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
                        </div>
 
                        <div class="carousel-item" data-bs-interval="2000">
-                           <img src="../secondaryschoolphoto/presentationcarousel/cnyperformance2019.jpg"  style="height:500px;" class="d-block w-100" alt="Image of Chinese New Year Celebration Performance 2019">
+                           <img src="../secondaryschoolphoto/presentationcarousel/cnyperformance2019.jpg"   class="d-block w-100 photocarousel" alt="Image of Chinese New Year Celebration Performance 2019">
                            <div class="carousel-caption d-none d-md-block">
                                <h5>Chinese New Year Celebration Performance 2019</h5>
                            </div>
                        </div>
                        <div class="carousel-item" data-bs-interval="2000">
-                           <img src="../secondaryschoolphoto/presentationcarousel/cnyperformance2019overallphoto.jpg"  style="height:500px;" class="d-block w-100" alt="Image of Chinese New Year Celebration Performance 2019">
+                           <img src="../secondaryschoolphoto/presentationcarousel/cnyperformance2019overallphoto.jpg"  class="d-block w-100 photocarousel" alt="Image of Chinese New Year Celebration Performance 2019">
                            <div class="carousel-caption d-none d-md-block">
                                <h5>Chinese New Year Celebration Performance 2019</h5>
                            </div>
                        </div>
                        <div class="carousel-item" data-bs-interval="2000">
-                           <img src="../secondaryschoolphoto/presentationcarousel/soop2019organisingcommittee.jpg"  style="height:500px;" class="d-block w-100" alt="Image of SOOP 2019 Organising Committee">
+                           <img src="../secondaryschoolphoto/presentationcarousel/soop2019organisingcommittee.jpg"   class="d-block w-100 photocarousel" alt="Image of SOOP 2019 Organising Committee">
                            <div class="carousel-caption d-none d-md-block">
                                <h5>Secondary One Orientation Programme 2019 <br>Organising Committee</h5>
                            </div>
                        </div>
                        <div class="carousel-item" data-bs-interval="2000">
-                           <img src="../secondaryschoolphoto/presentationcarousel/nationaldayphoto.jpg" style="height:500px;"  class="d-block w-100" alt="Photo of National Day Celebration 2020 ">
+                           <img src="../secondaryschoolphoto/presentationcarousel/nationaldayphoto.jpg"   class="d-block w-100 photocarousel" alt="Photo of National Day Celebration 2020 ">
                            <div class="carousel-caption d-none d-md-block">
                                <h5>National Day Celebration 2020</h5>
                            </div>
                        </div>
 
                        <div class="carousel-item" data-bs-interval="2000">
-                           <img src="../secondaryschoolphoto/presentationcarousel/meettheparentdinner.jpg"  style="height:500px;" class="d-block w-100" alt="Image of Dinner of Meet The Parent Session 2020">
+                           <img src="../secondaryschoolphoto/presentationcarousel/meettheparentdinner.jpg"   class="d-block w-100 photocarousel" alt="Image of Dinner of Meet The Parent Session 2020">
                            <div class="carousel-caption d-none d-md-block">
                                <h5>Dinner of Meet The Parent Session 2020</h5>
                            </div>
                        </div>
                        <div class="carousel-item" data-bs-interval="2000">
-                           <img src="../secondaryschoolphoto/presentationcarousel/cnyperformance2019teamphoto.jpg" style="height:500px;" class="d-block w-100" alt="Image of Chinese New Year Celebration Performance 2019">
+                           <img src="../secondaryschoolphoto/presentationcarousel/cnyperformance2019teamphoto.jpg"  class="d-block w-100 photocarousel" alt="Image of Chinese New Year Celebration Performance 2019">
                            <div class="carousel-caption d-none d-md-block">
                                <h5>Chinese New Year Celebration Performance 2019</h5>
                            </div>
                        </div>
                        <div class="carousel-item" data-bs-interval="2000">
-                           <img src="../secondaryschoolphoto/presentationcarousel/sltc2020.jpg"  style="height:500px;" class="d-block w-100" alt="Image of SLTC 2020 Facilitator Committee ">
+                           <img src="../secondaryschoolphoto/presentationcarousel/sltc2020.jpg"   class="d-block w-100 photocarousel" alt="Image of SLTC 2020 Facilitator Committee ">
                            <div class="carousel-caption d-none d-md-block">
                                <h5>Student Leader Training Camp 2020 <br>Facilitator Committee</h5>
                            </div>
                        </div>
                    </div>
+                   <!--Next and previous button to control carousel-->
                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                        <span class="visually-hidden">Previous</span>
@@ -287,10 +292,12 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
     <div class="row">
         <!--A image overlay effect component at left occupying half of the line for medium size screen,and full line for small screen-->
         <div class="col-lg-6 col-sm-12">
+            <!--Photo imcorpoerate with javascript for fade effect from sketch to real-->
      <div  class=" singaporepoly" id="singaporepoly" ></div>
         </div>
         <!--Text at left occupying right of the line for medium size screen,and full line for small screen-->
         <div class="col-lg-6 col-sm-12 text-end">
+            <!--Subtitles with part being red color-->
             <h1><span class="redcolor">Singapore Polytechnic</span> Experience</h1>
 <p>I am a AY2021 Student currently studying in Singapore Polytechnic.<br>In the course of Diploma in Applied AI and Analytics.School have started for around 5 month.<br>Find out more about my experience here! </p>
         </div>
@@ -300,8 +307,10 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
 </div>
 <!--End of third section-->
 <!--Start of forth section-->
+<!--New container that is grey-->
 <div class="container-fluid margintop grey ">
 <div class="  container ">
+    <!--More option section-->
     <h1>More <span class="slategry">Options</span></h1>
     <br><br>
 
@@ -310,6 +319,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
     <div class="catt col-lg-4 col-md-6 col-sm-12 col-xl-3">
  <!--Card 1 (on hover flip to backside-->
     <div class="card" id='card1'  >
+        <!--Front side of card-->
       <div id="card1font">
           <!-- Image from https://mastermandarin.org/tag/education/ -->
         <img src="../cardphoto/education.jpg" class="card-img-top" alt="Image of books">
@@ -317,6 +327,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
             <h3 class="card-title">Education Background</h3>
         </div>
         </div>
+        <!--Back side of card-->
         <div id="card1backside">
             <div class="container row aligncard">
                 <div class="text-center">
@@ -336,6 +347,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
         <div class="catt col-lg-4 col-md-6 col-sm-12 col-xl-3" >
             <!--Card 2 (on hover flip to backside-->
             <div class="card " id="card3" >
+                <!--Front side of card-->
           <div id="card3font">
               <!-- Image from https://6nomads.com/resources/remotetools/tproduct/250509661-285866365871-github-->
             <img src="../cardphoto/github.png"  class="card-img-top githubimg" alt="Image of Github">
@@ -343,6 +355,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
                 <h3 class="card-title">My Github</h3>
             </div>
           </div>
+                <!--Back side of card-->
             <div id="card3backside" >
                 <div  class="container row aligncard ">
     <div class="text-center">
@@ -350,6 +363,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
     <img src='../cardicons/command_line.svg' alt="Icon of command line" class="cardimagestyle">
     <p><strong>I have use Github for couples of years.Mostly involved in <span class="springgreen">Android development</span> and <br> <span class="cornflowerblue"> C Language </span> projects.Take a look at some of my projects.</strong></p>
     </div>
+                    <!--Center button-->
                <div class="col text-center">
                 <button type="button" onclick="window.location.href='https://www.github.com/zhuofan-16';" class="btn btn-primary " >Go to Github</button></div>
                 </div>
@@ -360,6 +374,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
         <div class="catt col-lg-4 col-md-6 col-sm-12 col-xl-3" >
             <!--Card 3 (on hover flip to backside)-->
             <div class="card" id="card2" >
+                <!--Front side of card-->
                <div id="card2font">
                    <!-- Image from https://www.execunet.com/category/career-center/market-info-and-trends/executive-market-intelligence-market-info-and-trends/page/2/
                    -->
@@ -368,6 +383,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
                     <h3 class="card-title">Achievements</h3>
                 </div>
                 </div>
+                <!--Back side of card-->
                 <div id="card2backside">
                     <div class="container row aligncard">
                         <div class="text-center">
@@ -388,6 +404,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
         <div class="catt col-lg-4 col-md-6 col-sm-12 col-xl-3" >
             <!--Card 4 (on hover flip to backside-->
             <div class="card" id='card4' >
+                <!--Front side of card-->
              <div id="card4font">
                  <!--Image from Singapore Polytechnic Website ,https://www.sp.edu.sg/soc/courses/full-time-diplomas/data-analytics-and-artificial-intelligence-(ai)/overview-->
                 <img src="../cardphoto/daaacourseinfo.jpg"  class="card-img-top githubimg" alt="Image of DAAA course info">
@@ -395,6 +412,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
                     <h3 class="card-title">My Course</h3>
                 </div>
              </div>
+                <!--Back side of card-->
                 <div id="card4backside">
                 <div class="container row aligncard">
                     <div class="text-center">

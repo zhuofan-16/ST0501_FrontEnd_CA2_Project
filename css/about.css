@@ -8,6 +8,7 @@ Student Class: DAAA/FT/1A/04
 Page:About Me (CSS)
 Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
 */
+/*Layer1: Time dependence feature:Use another color to fill background so that during spinning process,no white space will present*/
 #photo{
     width:696px;
     height:500px;
@@ -16,39 +17,43 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
     background-color:#e6edff;
 
 }
+/* Layer3: Time dependence feature:size of spinning image for day and night .By default day*/
 #photocontainer{
 /*Images from https://dribbble.com/nanuo ,Recreated by ZhuoFan*/
     background: url("../aboutmephoto/greeting.jpg") center;
-    width:696px;
+    width:696px;/*Size*/
     height:1000px;
     transform: rotate(180deg);
-    animation:spinday 4s ,3s alternate;
+    animation:spinday 4s ,3s alternate;/*Default Day*/
     -webkit-animation-fill-mode:forwards;
 
 }
+/* Layer2: Time dependence feature:Size and settings of the container itself*/
 #topcontainer{
     width:696px;
-    height:500px;
-    overflow: hidden;
+    height:500px;/*Only 500px*/
+    overflow: hidden;/*So that the remaining overflow does not appear*/
     margin:0;
+    /*Shadow*/
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     padding:0;
 }
-
+/*Spinning animation if current time is day*/
 @keyframes spinday { 100% {  transform:rotate(360deg); } }
+/*Spinning animation if current time is night*/
 @keyframes spinnight { 100% {  transform:rotate(180deg); } }
-
+/*Settings the clickable for 3D slideshows*/
 [type=radio] {
     display: none;
 }
-
+/*Enable 3D perspective */
 #slider {
     height: 500px;
     width:480px;
     perspective: 1000px;
     transform-style: preserve-3d;
 }
-
+/*Visible click area for switching */
 #slider label {
     margin: auto;
     width: 60%;
@@ -56,9 +61,10 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
     border-radius: 4px;
     position: absolute;
     left: 0; right: 0;
-    cursor: pointer;
+    cursor: pointer;/*Allow click like effect when hover*/
     transition: transform 0.4s ease;
 }
+/*Settings for 3D slideshow,upon click ,using transform to move next position*/
 #s1:checked ~ #slide2,#s2:checked ~ #slide3,#s3:checked~#slide1{
     box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
     transform: translate3d(-30%,0,-100px);
@@ -71,7 +77,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
     box-shadow: 0 6px 10px 0 rgba(0,0,0,.3), 0 2px 2px 0 rgba(0,0,0,.2);
     transform: translate3d(30%,0,-100px);
 }
-
+/*Images for the 3D slideshows*/
 #slide1 { background: url("../aboutmephoto/myphoto1.jpg") }
 #slide2 { background:url("../aboutmephoto/myphoto2.jpg") }
 #slide3 { background: url("../aboutmephoto/myphoto3.jpg")}

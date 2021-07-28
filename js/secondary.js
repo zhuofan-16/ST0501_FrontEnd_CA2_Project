@@ -15,10 +15,14 @@ options matching will be list out by enable the display:css style .Else if not m
 shown).If the user did not input anything ,the whole table will be hidden.This function will key running upon detecting that there is a input(onkeyup).
  */
 function searchfeature(){
-    var tables=document.getElementById("searchtable");
+    /*Get table by ID*/
+    var tables=document.getElementById("searchtable")
+    /*Get input by ID and upcase it */
     var input=document.getElementById("sbar").value.toUpperCase();
+    /*Get individual search option list*/
     var li=tables.getElementsByTagName("tr");
     for (var l=0;l<li.length;l++){
+        /* if the input match by any search option records ,remove the "hidden" in style display to make that option appear*/
         if (li[l].textContent.toUpperCase().indexOf(input)===0){/* Check for matching*/
             li[l].style.display="";
             tables.style.display=""
@@ -30,8 +34,9 @@ function searchfeature(){
             tables.style.display="none"/*If user did not enter anything ,hide*/
         }
     }}
-
+/*Only load after whole page is loaded*/
 window.onload=function() {
+    /*everytime,the search icon is clicked ,count++,when count is odd Make search overlay show else hide */
     var searchbar = document.getElementById("searchbar")
     var searchkey = document.getElementById("search");
     var counter = 0;
@@ -43,18 +48,22 @@ window.onload=function() {
             searchbar.style.visibility = "hidden";
         }
     };
+    /*Adding a event listener to remove and add animation everytime click so that animation will appear everytime it is clicked*/
     searchkey.addEventListener("click", function (e) {
         e.preventDefault;
         searchbar.classList.remove("searchbaranimation");
         void searchbar.offsetWidth;
         searchbar.classList.add("searchbaranimation");
     });
-
+/*3D Slideshow*/
+    /*Get elements by ID*/
     var photo1 = document.getElementById("slide1");
     var photo2 = document.getElementById("slide2")
     var photo3 = document.getElementById("slide3")
     var i = 0;
+    /*button for on and off of auto slideshow*/
     var timeron = 1;
+    /*Slideshow interval 1.5s*/
     var start = setInterval(function () {
         if (timeron === 1) {
             if (i === 3) {
@@ -80,12 +89,12 @@ window.onload=function() {
             }
         }
     }, 1500)
-
-
+/*Get radios of photos by ID*/
     var control1 = document.getElementById("s1")
     var control2 = document.getElementById("s2")
     var control3 = document.getElementById("s3")
     var check;
+    /*If first photo is clicked ,transform to there and wait for another 1.5s before starting*/
     control1.addEventListener("click", function (e) {
         check = 0;
         timeron = 0;
@@ -104,6 +113,7 @@ window.onload=function() {
             }
         }, 1500)
     })
+    /*If second photo is clicked ,transform to there and wait for another 1.5s before starting*/
     control2.addEventListener("click", function (e) {
         check = 0;
         timeron = 0;
@@ -122,7 +132,7 @@ window.onload=function() {
             }
         }, 1500)
     })
-
+    /*If third photo is clicked ,transform to there and wait for another 1.5s before starting*/
     control3.addEventListener("click", function (e) {
         check = 0;
         timeron = 0;
@@ -141,7 +151,7 @@ window.onload=function() {
             }
         }, 1500)
     })
-
+    /*Toast message*/
     var option =
         {
             animation: true,
@@ -149,11 +159,13 @@ window.onload=function() {
         };
 
     {
+        /*get toast element by id*/
         var toastHTMLElement = document.getElementById('secwelcome');
         var toastElement = new bootstrap.Toast(toastHTMLElement, option);
+        /*Launch toast*/
         toastElement.show();
     }
-    <!-- Script for typing effect for subtitles in First section-->
+    // Script for typing effect for subtitles in First section
 
     var r = 0;
     var txt = "Graduation";
@@ -161,25 +173,22 @@ window.onload=function() {
     Then create a monitor ,when user scroll to a section section,the function will be called
      */
     function typeWriter() {
-
+        //evaluates an expression every 0.3s intervals
         var endtype= setInterval(function(){
 
             if (r < txt.length) {
+                //Get element by ID and add letter by letter using charAt
                 document.getElementById("type").innerHTML += txt.charAt(r);
                 r++;
             }
         },300);
-        endtype();
-        clearTimeout(endtype);
-    }
 
+    }
+    /*Only launch the typing effect after you reach that section*/
     document.addEventListener('scroll',function(e){
         if (window.pageYOffset+window.innerHeight >document.querySelector("#secreflection>div").offsetTop){
 
             typeWriter();
-        }
-        else{
-            removetype();
         }
 
 

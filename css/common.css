@@ -8,43 +8,49 @@ Student Class: DAAA/FT/1A/04
 Page:Common layout (CSS)
 Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
 */
+/*Allow smooth scrolling and disable/hide horizontal scroll bar globally*/
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+/*Search icon svg*/
 #search{
     width:30px;
     opacity:70%;
-    cursor: pointer;
+    cursor: pointer;/*Allow-click effect*/
 }
+/*Darken color when color to create a effect*/
 #search:hover{
     opacity: 100%;
 }
+
 .navbar .navbar-nav .nav-link:hover {
     color: #000000;
 }
 
 .navbar .navbar-nav .nav-link {
-    position: relative;
+    position: relative;/*Relative positioning*/
 }
+/*Upon hover ,grey bar smoothly show up*/
 .navbar .navbar-nav .nav-link::after {
-    position: absolute;
+    position: absolute;/*Absolute positioning*/
     bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
-    background-color: grey;
+    background-color: grey;/*Grey*/
     color: transparent;
     width: 0;
     content: '';
-    height: 3px;
-    transition: all 0.5s;
+    height: 3px;/*Height*/
+    transition: all 0.5s;/*Transition*/
 }
 .navbar .navbar-nav .nav-link:hover::after {
     width: 100%;
 }
+/*Search bar expanded overlay(Overlay that appear after click on search**/
 #searchbar{
-    position:fixed;
+    position:fixed;/*Fixed positioning*/
     height:100%;
     background-color: rgba(0,0,0,0.1);/*Set background color*/
     backdrop-filter: blur(10px);
@@ -54,39 +60,43 @@ html{
     justify-content: center;
     z-index:200;
     object-fit: cover;
-    visibility: hidden;
+    visibility: hidden;/*By default hide this overlay,on click javascript scripts will change this */
 
 }
+/*Fade in effect*/
 @keyframes cover { from { opacity: 0;}}
+/*Fade in effect for main index page name */
 @keyframes fly { from { opacity: 0;top:90%} }
+
+/*Animation when search overlay appear*/
 .searchbaranimation{
     animation:cover 1s , 5s alternate;
 }
-
+/*padding for section*/
 .margintop{
     padding-top:200px;
     padding-bottom:200px ;
 }
+/*Grey background*/
 .grey{
     background-color: rgba(192,192,192,0.3);
 }
+/*Text to appear in center of page*/
 .mainname{
-    position:absolute;
+    position:absolute;/*Absolute positioning*/
     left:50%;
     text-align: center;
     top:60%;
     color:white;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);/*Center*/
     animation: fly 2s , 3s alternate ;/*Add animation */
 
 }
+/*Large text for title*/
 #enlarge{
     font-size:48px;
 }
 
-.textfly{
-    animation: cover 2s , 3s alternate ;/*Add animation */
-}
 .textfly{
     animation: fly 2s , 3s alternate ;/*Add animation */
 }
@@ -96,11 +106,12 @@ html{
     60% {opacity: 0;}
     100% {opacity: 0;}
 }
+/*use for typing effect*/
 .cursor{
     animation: blink .6s linear infinite alternate;
 }
 @keyframes typing { from { width: 0;} }
-
+/*Grey scale to colorful effect*/
 .greyscale{
 
     animation:greys 3s ,3s alternate;
@@ -113,31 +124,36 @@ html{
         filter:grayscale(0%);
     }
 }
+/*Search result table*/
 #searchtable tr th a{
     text-decoration: none;
     color:black;
 }
+/*Logo sizing*/
 .profilepicsizing{
     height:30px;
 }
+/*SearchBar*/
 .searchbarcss{
     position:relative;
     top:30%;
-    :500px;
     height:60px;
     outline:none;
     font-size: 40px;
     border:1px solid grey;
     border-radius:5px;
 }
+/*Arrow down button in cover section*/
 .arrowdown{
     height:50px;
-    cursor:pointer;
-    filter:invert(100%);
+    cursor:pointer;/*Allowable click*/
+    filter:invert(100%);/*Make it black*/
 }
+/*Blue color word that is usually use with typing effect*/
 .typingcolor{
     color:royalblue;
 }
+/*Forestgreen color word*/
 .forestgren{
     color:forestgreen;
 }
@@ -145,10 +161,12 @@ html{
     width:804px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+/*Red color word*/
 .redcolor{
     color:red;
 
 }
+/*Slategray color word*/
 .slategry{
   color:slategray;
 }
@@ -159,33 +177,43 @@ html{
 .cardimagestyle{
     height:50px;
 }
+/*yello color word*/
 .yellowcolor{
     color:#feb236;
 }
+/*Dark Cyan color word*/
 .darkcyn{
     color:darkcyan;
 }
+/*github image size*/
 .githubimg{
     height:240px;
 }
+/*Image size for cards*/
 .cardimg1{
     height:240px;
 }
+/*spring green color word*/
 .springgreen{
     color:springgreen;
 }
+/*cornflowerblue color word*/
 .cornflowerblue{
     color:cornflowerblue;
 }
+/* Purple color words*/
 .purplecolor{
     color:#6b5b95;
 }
+/*Pinkred color word*/
 .pinkred{
     color:#c94c4c;
 }
+/*golden color word*/
 .golden{
     color:goldenrod;
 }
+/*Set Z-index 99 for highest priority*/
 .zindex99{
     z-index: 99;
 }
@@ -195,34 +223,45 @@ html{
 .testimonial{
     height:50%;
 }
+/*slateblue color word*/
 .slateblue{
     color:slateblue;
 }
+/*Brown color word*/
 .brown{
     color:brown;
 }
+/*Dark Cyan color word*/
 .darkcyan{
     color:darkcyan;
 }
+/*Font size 12 word*/
 .fontsize12{
     font-size:12px;
 }
+/*Font size 14 word*/
 .fontsize14{
     font-size:14px;
 }
+/*Orange red color word*/
 .orangered{
     color:orangered;
 }
+/* Size of my photo at Science Center ,photo at about me page*/
 .photoeffectabout{
-    height:500px;
+    height:500px;/*Size*/
+    /*Shadow*/
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+/*Royal blue text*/
 .royalblue{
     color:royalblue;
 }
+/*Position for search table*/
 .searchfeature{
     position:relative;top:30%;
 }
+/*Settings for the search record table*/
 .searchtable{
     border-collapse: separate;display:none;
 }
@@ -230,24 +269,30 @@ html{
     height:50px;cursor:pointer;
 
 }
+/*Disable border and enable shadow for the contact card at about me page*/
 .contactbox{
     border:0;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
+/*medium green word*/
 .mediumgreen{
     color:mediumseagreen;
 }
 .height400{
  height:400px;
 }
+/*orange word*/
 .orange{
     color:orange;
 }
+/*red word*/
 .red{
     color:red;
 }
+/*rosybrown word*/
 .rosybrown{
     color:rosybrown;
 }
+/*Allow element to be view as clickable*/
 .cursorpointer{
     cursor:pointer;
 
@@ -256,15 +301,19 @@ html{
     position:relative;top:30%;
 
 }
+/*For the tables at about me page*/
 .tablesetting{
     border-collapse: separate;
 }
+/*Size of images for the bootstrap carousel*/
 .photocarousel{
     height:500px;
 }
+/*Modal body size for testimonials*/
 .modalbody{
     width:100%;height:500px;
 }
+/*Card size*/
 .cardsize{
     width:400px;
 }

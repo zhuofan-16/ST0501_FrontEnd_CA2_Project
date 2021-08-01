@@ -23,9 +23,6 @@ function typeWriter() {
             r++;
         }
     },300);
-    endtype();
-    //Clear eventually
-    clearTimeout(endtype);
 }
 //Only execute upon scrolling to that section.This is implemented by using a listener and offsets
 document.addEventListener('scroll',function(e){

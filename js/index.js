@@ -197,8 +197,7 @@ window.onload=function() {
                 r++;
             }
         },300);
-        endtype();
-        clearTimeout(endtype);
+
     }
     /*Only launch the typing effect after you reach that section*/
     document.addEventListener('scroll',function(e){

@@ -157,7 +157,7 @@ html{
     color:forestgreen;
 }
 .carouselsetting{
-    width:804px;
+    max-width:804px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 /*Red color word*/
@@ -304,10 +304,7 @@ html{
 .tablesetting{
     border-collapse: separate;
 }
-/*Size of images for the bootstrap carousel*/
-.photocarousel{
-    height:500px;
-}
+
 /*Modal body size for testimonials*/
 .modalbody{
     width:100%;height:500px;

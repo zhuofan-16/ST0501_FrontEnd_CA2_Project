@@ -80,8 +80,8 @@ width:100%;
 }
 /*Feedback wall setting*/
 .feedbackwall{
-    width:696px;
-    height:500px;
+    max-width:696px;
+  height:500px;
     background:url('../feedback/feedbackwallbackground.jpg');
     overflow: scroll; /*Set to scroll so that feedback can be view with scrolling in picture*/
 }

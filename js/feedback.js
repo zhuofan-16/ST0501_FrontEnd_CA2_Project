@@ -82,7 +82,7 @@ window.onload=function() {
         var comment=document.getElementById("comment").value;
         var tr=document.getElementById("tr");
       /*Add new comment in form of cards using innerhtml*/
-        tr.innerHTML+="<div class=\"col\">" +
+        tr.innerHTML+="<div class=\"col-sm-12 col-md-6 col-lg-4\">" +
             "<div class=\"card text-dark bg-light mb-3\" style=\"max-width: 18rem;\">" +
             "<div class=\"card-header\">"+
             "<img src='../photo/feedback/guest.jpg' style=\"height:30px;\" class=\"rounded me-2\" alt=\"...\">"+name+

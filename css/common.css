@@ -52,7 +52,7 @@ html{
 #searchbar{
     position:fixed;/*Fixed positioning*/
     height:100%;
-   background:url("../searchpage/searchpage.jpg");/*Background photo for search*/
+   background:url("../photo/searchpage/searchpage.jpg");/*Background photo for search*/
     top:80px;
     display:flex;
     left:0;

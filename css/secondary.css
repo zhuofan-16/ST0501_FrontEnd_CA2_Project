@@ -53,9 +53,9 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
     transform: translate3d(30%,0,-100px);
 }
 /*Images for the 3D slideshows*/
-#slide1 { background: url("../secondaryschoolphoto/friendscarousel/friendsphoto1.jpg") }
-#slide2 { background:url("../secondaryschoolphoto/friendscarousel/friendsphoto2.jpg") }
-#slide3 { background: url("../secondaryschoolphoto/friendscarousel/friendsphoto3.jpg")}
+#slide1 { background: url("../photo/secondaryschoolphoto/friendscarousel/friendsphoto1.jpg") }
+#slide2 { background:url("../photo/secondaryschoolphoto/friendscarousel/friendsphoto2.jpg") }
+#slide3 { background: url("../photo/secondaryschoolphoto/friendscarousel/friendsphoto3.jpg")}
 /*Shadow and width for pictures at the carousel of the cover page */
 .slidecarousell{
     max-width:804px;box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;

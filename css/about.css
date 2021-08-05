@@ -20,7 +20,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
 /* Layer3: Time dependence feature:size of spinning image for day and night .By default day*/
 #photocontainer{
 /*Images from https://dribbble.com/nanuo ,Recreated by ZhuoFan*/
-    background: url("../aboutmephoto/greeting.jpg") center;
+    background: url("../photo/aboutmephoto/greeting.jpg") center;
     max-width:696px;/*Size*/
     height:1000px;
     transform: rotate(180deg);
@@ -78,7 +78,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
     transform: translate3d(30%,0,-100px);
 }
 /*Images for the 3D slideshows*/
-#slide1 { background: url("../aboutmephoto/myphoto1.jpg") }
-#slide2 { background:url("../aboutmephoto/myphoto2.jpg") }
-#slide3 { background: url("../aboutmephoto/myphoto3.jpg")}
+#slide1 { background: url("../photo/aboutmephoto/myphoto1.jpg") }
+#slide2 { background:url("../photo/aboutmephoto/myphoto2.jpg") }
+#slide3 { background: url("../photo/aboutmephoto/myphoto3.jpg")}
 

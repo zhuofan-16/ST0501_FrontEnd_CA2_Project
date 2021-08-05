@@ -15,7 +15,7 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
     justify-content: center;
     left:0;/*Left 0 to avoid weird space*/
     margin-top:72px;/*Avoid touching the navigation bar*/
-    background:url("../cover/skycover.jpg");
+    background:url("../photo/cover/skycover.jpg");
     background-size:cover;
     width: 100vw;
     height: 100vh;
@@ -57,16 +57,16 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
     transform: translate3d(30%,0,-100px);
 }
 /*Images for the 3D slideshows*/
-#slide1 { background: url("../aboutmephoto/myphoto1.jpg") }
-#slide2 { background:url("../aboutmephoto/myphoto2.jpg") }
-#slide3 { background: url("../aboutmephoto/myphoto3.jpg")}
+#slide1 { background: url("../photo/aboutmephoto/myphoto1.jpg") }
+#slide2 { background:url("../photo/aboutmephoto/myphoto2.jpg") }
+#slide3 { background: url("../photo/aboutmephoto/myphoto3.jpg")}
 
 /*Card settings for the 4 cards at the more options section*/
 #card1,#card2,#card3,#card4{
     width: 100%;
     height: 100%;
     transition: transform 1s;
-    transform-style: preserve-3d;/*Allow 3D perpection*/
+    transform-style: preserve-3d;/*Allow 3D perception*/
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 
 }
@@ -100,14 +100,14 @@ Github Commit :https://github.com/zhuofan-16/ST0501_FrontEnd_CA2_Project
 /*Set size for sketched image of Singapore Polytechnic*/
 .singaporepoly{
     max-width: 507px;
-    background: url("../spphoto/sketchofsingaporepolytechnic.jpg");
+    background: url("../photo/spphoto/sketchofsingaporepolytechnic.jpg");
     height: 380px;
 
 
 }
 /*Set size of colored image of Singapore polytechnic*/
 .new{
-    background: url("../spphoto/paintsingaporepolytechnic.jpg");
+    background: url("../photo/spphoto/paintsingaporepolytechnic.jpg");
     max-width: 537px;
     height: 400px;
     transition: all 0.8s;

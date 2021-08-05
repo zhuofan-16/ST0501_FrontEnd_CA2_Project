@@ -82,7 +82,7 @@ width:100%;
 .feedbackwall{
     max-width:696px;
   height:500px;
-    background:url('../feedback/feedbackwallbackground.jpg');
+    background:url('../photo/feedback/feedbackwallbackground.jpg');
     overflow: scroll; /*Set to scroll so that feedback can be view with scrolling in picture*/
 }
 .maxwidth{

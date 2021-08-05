@@ -85,7 +85,7 @@ window.onload=function() {
         tr.innerHTML+="<div class=\"col\">" +
             "<div class=\"card text-dark bg-light mb-3\" style=\"max-width: 18rem;\">" +
             "<div class=\"card-header\">"+
-            "<img src='../feedback/guest.jpg' style=\"height:30px;\" class=\"rounded me-2\" alt=\"...\">"+name+
+            "<img src='../photo/feedback/guest.jpg' style=\"height:30px;\" class=\"rounded me-2\" alt=\"...\">"+name+
             "</div>"+
             "<div class=\"card-body\">"+
             "<p  class=\"card-text\">" +comment+ "</p>" +
